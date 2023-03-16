@@ -1,0 +1,446 @@
+.main {
+  position: relative;
+}
+
+.btn-flotante {
+  position: fixed;
+  right: 0;
+  z-index: 990;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.btn-flotante p {
+  color: white;
+  font-size: 15px;
+}
+
+.medida {
+  top: 300px;
+  width: 130px;
+  padding: 5px 0px 5px 10px;
+  background-color: #e6007e;
+}
+
+.grupo {
+  top: 360px;
+  width: 130px;
+  padding: 5px 0px 5px 10px;
+  background-color: #08a4c0;
+}
+
+.wapp {
+  bottom: 100px;
+  background-color: #41e600;
+  padding: 10px;
+  right: 23px;
+  border-radius: 100%;
+}
+
+.carousuel {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 86.2vh;
+  width: 100%;
+  display: flex;
+  align-items: end;
+}
+
+.carousel-title {
+  font-size: 50px;
+  font-weight: bold;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: fit-content;
+  height: fit-content;
+  padding: 20px;
+  margin-bottom: 50px;
+  margin-left: 20px;
+}
+
+.carousel1 {
+  background-image: url("/carousel/Easter-Island-Rapa-Nui-hotel.jpg");
+}
+
+.carousel2 {
+  background-image: url("/carousel/wallpaperflare.com_wallpaper.jpg");
+}
+
+.carousel3 {
+  background-image: url("/carousel/machupichu.jpg");
+}
+
+.carousel4 {
+  background-image: url("/carousel/aqp2-min.webp");
+}
+
+.carousel5 {
+  background-image: url("/carousel/lim7-min-min.webp");
+  background-position: bottom center;
+}
+
+.inicio {
+  margin-top: 50px;
+}
+
+.inicio h1 {
+  text-align: center;
+  width: 100%;
+  margin: 0 0 30px 0;
+  font-size: 45px;
+  line-height: 40px;
+  z-index: 2;
+  position: relative;
+  color: #373737;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
+}
+
+.inicio-content {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1200px;
+  justify-content: space-evenly;
+}
+
+p {
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+  color: #757575;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0;
+  margin: 0;
+  max-width: 550px;
+}
+
+.inicio-content-ul {
+  list-style: circle;
+}
+
+.inicio-content-ul li {
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+  color: #757575;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0;
+  margin: 0;
+  max-width: 550px;
+}
+
+/* DESTINOS */
+
+.destinos {
+  margin-top: 50px;
+}
+
+.destinos h2 {
+  text-align: center;
+  width: 100%;
+  margin: 0 0 30px 0;
+  font-size: 30px;
+  line-height: 40px;
+  z-index: 2;
+  position: relative;
+  color: #373737;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
+}
+
+.destinos-card {
+  display: flex;
+  width: 98%;
+  overflow: hidden;
+  margin: 0 20px;
+}
+
+.destinos-one-card {
+  position: relative;
+  width: 0px;
+  flex-grow: 1;
+  height: 600px;
+  object-fit: cover;
+  transition: 0.5s ease;
+}
+
+.destinos-one-card:hover {
+  width: 30%;
+  filter: contrast(120%);
+}
+
+.destinos-one-card img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.destinos-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  width: 100%;
+}
+
+.destinos-layer .destinos-layer-titulo {
+  padding: 40px 0 0 40px;
+  color: whitesmoke;
+  opacity: 1;
+  transition: opacity 0.5s;
+  transition: transform 1s ease;
+}
+
+.destinos-layer .destinos-layer-contenido {
+  font-family: "Oxygen", sans-serif;
+  letter-spacing: 1px;
+  padding-left: 40px;
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 50px;
+  opacity: 1;
+  transition: opacity 0.5s;
+  transition: transform 1s ease;
+}
+
+.destinos-one-card:hover .destinos-layer .destinos-layer-contenido,
+.destinos-one-card:hover .destinos-layer .destinos-layer-titulo {
+  transform: translateY(-150px) translateX(-20px);
+}
+
+/* PAQUETES */
+
+.paquetes {
+  margin-top: 40px;
+}
+
+.paquetes h2 {
+  text-align: center;
+  width: 100%;
+  margin: 0 0 30px 0;
+  font-size: 30px;
+  line-height: 40px;
+  z-index: 2;
+  position: relative;
+  color: #373737;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
+}
+
+.paquetes p {
+  text-align: center;
+  min-width: 300px;
+  margin: 0 auto;
+}
+
+.paquete {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.paquetes-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 40px;
+  margin: 50px;
+}
+
+.paquete img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+}
+
+.layer {
+  width: 100%;
+  height: 0%;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  font-size: 14px;
+  transition: height 0.5s;
+}
+
+.layer .layer-titulo {
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: white;
+}
+
+.layer h4 {
+  font-size: 25px;
+  /* color: #ffdf2a; */
+  color: #e6007e;
+  font-family: "Open Sans", sans-serif;
+}
+
+.layer .layer-contenido {
+  color: whitesmoke;
+}
+
+.paquete:hover img {
+  transform: scale(1.1);
+}
+
+.paquete:hover .layer {
+  height: 100%;
+  cursor: pointer;
+}
+
+/* HIGHLIGHTS */
+
+.highlights {
+  margin-top: 50px;
+}
+
+.highlights h2 {
+  text-align: center;
+  width: 100%;
+  margin: 0 0 30px 0;
+  font-size: 30px;
+  line-height: 40px;
+  z-index: 2;
+  position: relative;
+  color: #373737;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
+}
+
+.highlights p {
+  text-align: center;
+  min-width: 300px;
+  margin: 0 auto;
+}
+
+.card-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 1050px) {
+  .carousuel {
+    height: 84vh;
+    width: 100%;
+  }
+
+  .carousel-title {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .inicio-content {
+    flex-direction: column;
+    max-width: 450px;
+  }
+
+  .inicio-content p {
+    margin-left: 5%;
+    text-align: center;
+  }
+
+  .inicio-content-ul {
+    margin-left: 10%;
+    margin-top: 15px;
+  }
+
+  .destinos-card {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .destinos-card div {
+    width: 60vh;
+    height: 40vh;
+    border-radius: 10px;
+  }
+
+  .noHover {
+    pointer-events: none;
+  }
+
+  .paquetes-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+    margin: 30px;
+  }
+}
+
+@media screen and (max-width: 405px) {
+  .inicio h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 20px !important;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  .inicio-content {
+    flex-direction: column;
+    max-width: 300px;
+  }
+
+  .inicio-content-ul {
+    margin-top: 15px;
+    margin-left: 20px;
+  }
+
+  .inicio-content-ul li {
+    font-size: 12px;
+  }
+
+  .destinos-card {
+    align-items: center;
+    gap: 15px;
+  }
+
+  .destinos-card div {
+    width: 99%;
+    height: 200px;
+    border-radius: 10px;
+  }
+
+  .paquetes-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin: 50px;
+  }
+
+  .layer h4 {
+    font-size: 20px;
+  }
+
+  .oneCard {
+    width: 250px !important;
+  }
+
+  .carousel-title {
+    font-size: 18px;
+  }
+}

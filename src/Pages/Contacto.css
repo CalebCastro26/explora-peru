@@ -1,0 +1,37 @@
+.contacto {
+  margin-top: 50px;
+}
+
+.contacto h1 {
+  text-align: center;
+  width: 100%;
+  margin: 0 0 30px 0;
+  font-size: 45px;
+  line-height: 40px;
+  z-index: 2;
+  position: relative;
+  color: #373737;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
+}
+
+.contactos-content {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 50px;
+}
+
+.contactos-content-left {
+  width: 400px;
+}
+
+.contactos-content-left form {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.contactos-content-right {
+  width: 400px;
+}
