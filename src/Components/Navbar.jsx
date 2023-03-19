@@ -32,33 +32,39 @@ export default function Navbar() {
         <div className="top-bar-inner">
           <div className="top-bar-content">
             <div className="inner">
-              <span className="phone">
+              <a href="tel:+51960396110" className="phone">
                 <ion-icon name="call" className="top-icon" />
                 +51 960396110
-              </span>
-              <span className="content">|</span>
-              <span className="correo">
+              </a>
+              <a className="content">|</a>
+              <a href="mailto:info@exploraperutravel.com" className="correo">
                 <ion-icon name="mail" className="top-icon" />
                 info@exploraperutravel.com
-              </span>
+              </a>
             </div>
           </div>
           <div className="top-bar-socials">
             <div className="inner">
               <span>
-                <a href="http://www.facebook.com">
+                <a
+                  href="https://web.facebook.com/people/Explora-Per%C3%BA/100079974654390/?mibextid=ZbWKwL"
+                  target="_blank"
+                >
                   <ion-icon name="logo-facebook" />
                 </a>
               </span>
               <span className="content">|</span>
               <span>
-                <a href="https://www.instagram.com/">
+                <a
+                  href="https://www.instagram.com/explora4256/"
+                  target="_blank"
+                >
                   <ion-icon name="logo-instagram" />
                 </a>
               </span>
               <span className="content">|</span>
               <span>
-                <a href="https://www.youtube.com/">
+                <a href="https://www.youtube.com" target="_blank">
                   <ion-icon name="logo-youtube" />
                 </a>
               </span>

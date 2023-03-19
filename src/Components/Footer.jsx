@@ -37,17 +37,20 @@ export default function Footer() {
       </div>
       <div className="footer-right">
         <span className="facebook">
-          <a href="http://www.facebook.com">
+          <a
+            href="https://web.facebook.com/people/Explora-Per%C3%BA/100079974654390/?mibextid=ZbWKwL"
+            target="_blank"
+          >
             <ion-icon name="logo-facebook" />
           </a>
         </span>
         <span className="instagram">
-          <a href="">
+          <a href="https://www.instagram.com/explora4256/" target="_blank">
             <ion-icon name="logo-instagram" />
           </a>
         </span>
         <span className="youtube">
-          <a href="">
+          <a href="https://www.youtube.com/" target="_blank">
             <ion-icon name="logo-youtube" />
           </a>
         </span>

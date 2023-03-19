@@ -30,7 +30,7 @@ header {
   display: flex;
 }
 
-.top-bar-content .inner > span {
+.top-bar-content .inner > a {
   color: #d3d3d3;
   font-family: "Open Sans", sans-serif;
   font-weight: 500;
@@ -39,6 +39,10 @@ header {
   font-size: 14px;
   gap: 10px;
   cursor: pointer;
+}
+
+.top-bar-content .inner > a:hover{
+  text-decoration: underline;
 }
 
 .top-bar-socials {

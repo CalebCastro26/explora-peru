@@ -53,47 +53,47 @@ export default function Index() {
       </section>
       <section id="destinos" className="destinos">
         <h2>Destino Perú - Desiertos, Andes y Amazonia</h2>
-        <div class="destinos-card">
-          <div class="destinos-one-card noHover">
+        <div className="destinos-card">
+          <div className="destinos-one-card noHover">
             <img src="/destinos/trek-cajamarca-amazonas.jpg" alt="" />
-            <div class="destinos-layer">
-              <h4 class="destinos-layer-titulo">Destino Desierto</h4>
-              <p class="destinos-layer-contenido">Machu Picchu - Cuzco</p>
+            <div className="destinos-layer">
+              <h4 className="destinos-layer-titulo">Destino Desierto</h4>
+              <p className="destinos-layer-contenido">Machu Picchu - Cuzco</p>
             </div>
           </div>
-          <div class="destinos-one-card noHover">
+          <div className="destinos-one-card noHover">
             <img src="/destinos/trek-cajamarca-lambayeque2.jpg" alt="" />
-            <div class="destinos-layer">
-              <h4 class="destinos-layer-titulo">Destino Andes</h4>
-              <p class="destinos-layer-contenido">Andes - Cuzco</p>
+            <div className="destinos-layer">
+              <h4 className="destinos-layer-titulo">Destino Andes</h4>
+              <p className="destinos-layer-contenido">Andes - Cuzco</p>
             </div>
           </div>
-          <div class="destinos-one-card noHover">
+          <div className="destinos-one-card noHover">
             <img src="/destinos/trek-cajamarca-trujillo.jpg" alt="" />
-            <div class="destinos-layer">
-              <h4 class="destinos-layer-titulo">Destino Amazonia</h4>
-              <p class="destinos-layer-contenido">Amazonas - Selva</p>
+            <div className="destinos-layer">
+              <h4 className="destinos-layer-titulo">Destino Amazonia</h4>
+              <p className="destinos-layer-contenido">Amazonas - Selva</p>
             </div>
           </div>
-          <div class="destinos-one-card noHover">
+          <div className="destinos-one-card noHover">
             <img src="/destinos/trek-cajamarca-trujillo.jpg" alt="" />
-            <div class="destinos-layer">
-              <h4 class="destinos-layer-titulo">Destino Amazonia</h4>
-              <p class="destinos-layer-contenido">Amazonas - Selva</p>
+            <div className="destinos-layer">
+              <h4 className="destinos-layer-titulo">Destino Amazonia</h4>
+              <p className="destinos-layer-contenido">Amazonas - Selva</p>
             </div>
           </div>
-          <div class="destinos-one-card noHover">
+          <div className="destinos-one-card noHover">
             <img src="/destinos/trek-cajamarca-trujillo.jpg" alt="" />
-            <div class="destinos-layer">
-              <h4 class="destinos-layer-titulo">Destino Amazonia</h4>
-              <p class="destinos-layer-contenido">Amazonas - Selva</p>
+            <div className="destinos-layer">
+              <h4 className="destinos-layer-titulo">Destino Amazonia</h4>
+              <p className="destinos-layer-contenido">Amazonas - Selva</p>
             </div>
           </div>
-          <div class="destinos-one-card noHover">
+          <div className="destinos-one-card noHover">
             <img src="/destinos/trek-cajamarca-trujillo.jpg" alt="" />
-            <div class="destinos-layer">
-              <h4 class="destinos-layer-titulo">Destino Amazonia</h4>
-              <p class="destinos-layer-contenido">Amazonas - Selva</p>
+            <div className="destinos-layer">
+              <h4 className="destinos-layer-titulo">Destino Amazonia</h4>
+              <p className="destinos-layer-contenido">Amazonas - Selva</p>
             </div>
           </div>
         </div>
