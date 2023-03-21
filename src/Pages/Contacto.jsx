@@ -1,8 +1,12 @@
 import "./Contacto.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Contacto() {
   const [datos, setDatos] = useState({});
+
+  useEffect(() => {
+    window.scroll({ top: 0 });
+  }, []);
 
   const handleChange = (e) => {
     setDatos({
@@ -32,12 +36,11 @@ export default function Contacto() {
             <input type="email" placeholder="E-mail" />
             <div className="form-telefono">
               <input
-                type="tel"
-                maxLength="4"
-                placeholder="Código"
+                type="text"
+                placeholder="Pais"
                 className="form-codigo"
                 onChange={handleChange}
-                name="codigo"
+                name="pais"
               />
               <input
                 type="tel"
@@ -108,10 +111,7 @@ export default function Contacto() {
               </a>
             </span>
             <span className="youtube">
-              <a
-                href="https://www.youtube.com/@explorerperutravel6841"
-                target="_blank"
-              >
+              <a href="https://www.youtube.com/" target="_blank">
                 <ion-icon name="logo-youtube" />
               </a>
             </span>

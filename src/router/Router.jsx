@@ -49,9 +49,14 @@ export default function Router() {
         }}
         icon={<ArrowDownOutlined />}
       />
-      <div className="btn-flotante wapp">
-        <WhatsAppOutlined style={{ color: "white", fontSize: 22 }} />
-      </div>
+      <a
+        href="https://api.whatsapp.com/send?phone=51960396110&text=Hola,%20vi%20un%20anuncio%20en%20Facebook%20y%20quisiera%20conocer%20más%20sobre%20tus%20productos"
+        target="_blank"
+      >
+        <div className="btn-flotante wapp">
+          <WhatsAppOutlined style={{ color: "white", fontSize: 22 }} />
+        </div>
+      </a>
       <Footer />
     </BrowserRouter>
   );

@@ -1,7 +1,15 @@
 import { Card, Carousel } from "antd";
+import { useTranslation } from "react-i18next";
+import { useEffect } from "react";
+
 import "./Index.css";
 export default function Index() {
   const { Meta } = Card;
+  const { t } = useTranslation();
+
+  useEffect(() => {
+    window.scroll({ top: 0 });
+  }, []);
 
   return (
     <div className="main">
@@ -9,7 +17,9 @@ export default function Index() {
         <Carousel autoplay effect="scrollx">
           <div>
             <div className="carousuel carousel1">
-              <div className="carousel-title">Primer titulo de viaje</div>
+              <div className="carousel-title">
+                {t("index.carousel.primerCard")}
+              </div>
             </div>
           </div>
           <div>

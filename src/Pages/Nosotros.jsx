@@ -1,10 +1,65 @@
 import "./Nosotros.css";
-import { Tabs } from "antd";
+import { Card, Tabs } from "antd";
+import { useEffect } from "react";
 
 export default function Nosotros() {
-  const item1 = (
-    <div>
-      <h1>Hola</h1>
+  useEffect(() => {
+    window.scroll({ top: 0 });
+  }, []);
+
+  const { Meta } = Card;
+  const tab1 = (
+    <div className="tab">
+      <p>
+        Realizamos viajes a la medida para grupos pequeños y grandes. Creamos
+        viajes especializados en arqueología, observación de aves, trekking y
+        gastronomía de acuerdo a su preferencia.
+      </p>
+      <img src="/destinos/trek-cajamarca-trujillo.jpg" alt="" />
+      <img src="/destinos/trek-cajamarca-trujillo.jpg" alt="" />
+    </div>
+  );
+  const tab2 = (
+    <div className="tab">
+      <p>
+        Explora Travel ofrece un servicio de calidad y estamos listos para
+        asistirlo durante todo su viaje con una comunicación fluida y constante.
+      </p>
+      <img src="/destinos/trek-cajamarca-trujillo.jpg" alt="" />
+      <img src="/destinos/trek-cajamarca-trujillo.jpg" alt="" />
+    </div>
+  );
+  const tab3 = (
+    <div className="tab">
+      <p>
+        Experimentados y apasionados por el Perú, acreditados por el Ministerio
+        de Turismo y Comercio Exterior; con dominio de idiomas, que harán de su
+        viaje en una experiencia única.
+      </p>
+      <img src="/destinos/trek-cajamarca-trujillo.jpg" alt="" />
+      <img src="/destinos/trek-cajamarca-trujillo.jpg" alt="" />
+    </div>
+  );
+  const tab4 = (
+    <div className="tab">
+      <p>
+        Diseñamos tours que permiten al viajero entrar en contacto con las
+        comunidades locales; y descubrir la riqueza cultural, geográfica y
+        gastronómica.
+      </p>
+      <img src="/destinos/trek-cajamarca-trujillo.jpg" alt="" />
+      <img src="/destinos/trek-cajamarca-trujillo.jpg" alt="" />
+    </div>
+  );
+  const tab5 = (
+    <div className="tab">
+      <p>
+        Valoramos a las comunidades locales, y buscamos que se beneficien
+        directamente de la actividad turística fomentando de manera responsable
+        un desarrollo sostenible.
+      </p>
+      <img src="/destinos/trek-cajamarca-trujillo.jpg" alt="" />
+      <img src="/destinos/trek-cajamarca-trujillo.jpg" alt="" />
     </div>
   );
 
@@ -12,27 +67,27 @@ export default function Nosotros() {
     {
       key: "1",
       label: `Diseño Personalizado`,
-      children: item1,
+      children: tab1,
     },
     {
       key: "2",
       label: `Servicio`,
-      children: `Content of Tab Pane 2`,
+      children: tab2,
     },
     {
       key: "3",
       label: `Nuestros Guias`,
-      children: `Content of Tab Pane 3`,
+      children: tab3,
     },
     {
       key: "4",
       label: `Inmersión Cultural y gastronomica`,
-      children: `Content of Tab Pane 3`,
+      children: tab4,
     },
     {
       key: "5",
       label: `Inclusión y respeto`,
-      children: `Content of Tab Pane 3`,
+      children: tab5,
     },
   ];
 
@@ -51,8 +106,127 @@ export default function Nosotros() {
         que nuestros servicios los lleve a disfrutar de la cultura y gastronomía
         peruana.
       </p>
-      <div style={{ display: "flex", justifyContent: "center", marginTop: 50 }}>
-        <Tabs type="card" items={items} defaultActiveKey="1" />
+      <h3>Por qué Explora Perú</h3>
+      <div className="tab-container">
+        <Tabs
+          tabPosition="top"
+          type="card"
+          items={items}
+          defaultActiveKey="1"
+        />
+      </div>
+      <h3>EXPERTOS EN PERÚ</h3>
+      <div className="expertos-container">
+        <Card
+          style={{ width: 250 }}
+          cover={
+            <img
+              className="img-expertos"
+              alt="victor"
+              src="/destinos/trek-cajamarca-trujillo.jpg"
+            />
+          }
+        >
+          <Meta
+            title="Victor Minaya"
+            description={
+              <p className="expertos-card-text">
+                “He sido agente de viajes desde los 19 años, soy Guía Oficial de
+                turismo y chef de profesión. Apasionado por la cocina y por los
+                productos andinos nativos. Especializado en la iconografía
+                prehispánica y religiosa. Con amplio conocimiento del Perú y sus
+                atractivos turísticos. Experto en cotizaciones y operaciones de
+                los programas de Explora Perú Travel. Tengo dominio del idioma
+                francés y un gran sentido del humor”. <br /> <br /> Mi frase
+                favorita es: “Comer es una necesidad y cocinar es un arte”
+              </p>
+            }
+          />
+        </Card>
+        <Card
+          style={{ width: 250 }}
+          cover={
+            <img
+              className="img-expertos"
+              alt="magalí"
+              src="/destinos/trek-cajamarca-trujillo.jpg"
+            />
+          }
+        >
+          <Meta
+            title="Magalí Malca"
+            description={
+              <p className="expertos-card-text">
+                “Soy de Cajamarca, una ciudad llena de lindos paisajes al norte
+                del Perú. Soy Licenciada en Turismo y Hotelería, también Guía
+                Oficial de Turismo y tengo un Diplomado en Historia del Arte. Lo
+                que me motivó a estudiar turismo es la riqueza histórica y
+                arqueológica de mi país. Tengo dominio del idioma francés e
+                inglés. He viajado por todo el Perú y hoy en Explora Perú Travel
+                deseo compartir mi experiencia”. <br /> <br /> Mi frase favorita
+                es: “El mundo es un libro, quienes no viajan leen sólo una
+                página”
+              </p>
+            }
+          />
+        </Card>
+        <Card
+          style={{ width: 250 }}
+          cover={
+            <img
+              alt="rodrigo"
+              src="/destinos/trek-cajamarca-trujillo.jpg"
+              className="img-expertos"
+            />
+          }
+        >
+          <Meta
+            title="Rodrigo Zanabria"
+            description={
+              <p className="expertos-card-text">
+                “Soy de Lima, una ciudad llena de hermosos contrastes. Tengo más
+                de veinte años de experiencia trabajando en atención al cliente,
+                en cruceros y restaurantes. Estudié turismo porque me gusta
+                conocer gente de diferentes culturas. Hablo el idioma inglés y
+                portugues. Me apasiona la fusión cultural que la gastronomía
+                peruana refleja. A través de Explora Perú Travel deseo mostrar
+                al viajero lo maravilloso que es mi país”. <br />
+                <br /> Mi frase favorita es: “Piensa, cree, sueña…. y atrévete a
+                viajar”
+              </p>
+            }
+          />
+        </Card>
+        <Card
+          style={{ width: 250 }}
+          cover={
+            <img
+              className="img-expertos"
+              alt="erika"
+              src="/destinos/trek-cajamarca-trujillo.jpg"
+            />
+          }
+        >
+          <Meta
+            title="Erika Aguirre"
+            description={
+              <p className="expertos-card-text">
+                "Nací y crecí en Lima. Viví a pocas cuadras del centro
+                histórico. Empecé a trabajar en turismo a los 17 años y soy
+                bachiller en Administración Turística y Hotelera. Me encanta la
+                observación de aves, historia del arte y la fotografía. Tengo
+                más de 20 años en el sector turístico, hablo inglés e italiano.
+                Amo mi trabajo y me siento bendecida, porque Explora Perú Travel
+                me da la oportunidad de hacer realidad los sueños de los
+                viajeros.
+                <br />
+                <br />
+                Mi frase favorita es: ”El hoy es un regalo, por eso se le llama
+                presente“{" "}
+              </p>
+            }
+          />
+        </Card>
       </div>
     </section>
   );

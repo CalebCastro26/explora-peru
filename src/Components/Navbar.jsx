@@ -3,28 +3,47 @@ import { Dropdown, Button } from "antd";
 import "./Navbar.css";
 import { MenuOutlined } from "@ant-design/icons";
 import { items } from "../navbarContent";
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { ApplicationContext } from "../context/ApplicationContext";
+import { useTranslation } from "react-i18next";
 
 export default function Navbar() {
+  const appctx = useContext(ApplicationContext);
+  const { t, i18n } = useTranslation();
   const [bandera, setBandera] = useState("🇪🇸");
+
+  const onChangeLenguaje = (lenguaje) => {
+    appctx.setDataContext({ lenguaje });
+    console.log(lenguaje);
+    i18n.changeLanguage(lenguaje);
+  };
+
   const banderas = [
     {
       id: 1,
       bandera: "🇪🇸",
+      lenguaje: "es",
     },
     {
       id: 2,
       bandera: "🇫🇷",
+      lenguaje: "fr",
     },
     {
       id: 3,
       bandera: "🇵🇹",
+      lenguaje: "pt",
     },
     {
       id: 4,
       bandera: "🇬🇧",
+      lenguaje: "en",
     },
   ];
+
+  const onClick = ({ key }) => {
+    console.log(`Click item with ${key}`);
+  };
 
   return (
     <header>
@@ -73,11 +92,14 @@ export default function Navbar() {
         </div>
       </div>
       <nav>
-        <img src="/explora-logo.webp" alt="" />
+        <Link to="/">
+          <img src="/explora-logo.webp" alt="" />
+        </Link>
         <Dropdown
           placement="bottomRight"
           menu={{
             items,
+            onClick,
           }}
         >
           <Button
@@ -90,16 +112,16 @@ export default function Navbar() {
           <ul>
             <li>
               <Link to="/" className="navbar-link link">
-                Inicio
+                {t("navbar.inicio")}
               </Link>
             </li>
             <li>
               <Link to="/nosotros" className="navbar-link link">
-                Nosotros
+                {t("navbar.nosotros")}
               </Link>
             </li>
             <li>
-              <Link className="navbar-link link">Destinos Perú</Link>
+              <Link className="navbar-link link">{t("navbar.destinos")}</Link>
               <ul>
                 <li>
                   <Link className="dropdown-link link">Por qué Perú?</Link>
@@ -174,7 +196,7 @@ export default function Navbar() {
               </ul>
             </li>
             <li>
-              <Link className="navbar-link link">Programas</Link>
+              <Link className="navbar-link link">{t("navbar.programas")}</Link>
               <ul className="dropdown-Programas">
                 <li className="dropdown-Programas">
                   <Link className="dropdown-link link">
@@ -202,7 +224,7 @@ export default function Navbar() {
               </ul>
             </li>
             <li>
-              <Link className="navbar-link link">Highlights</Link>
+              <Link className="navbar-link link">{t("navbar.highlights")}</Link>
               <ul className="dropdown-Highlights">
                 <li className="dropdown-Highlights">
                   <Link className="dropdown-link link">FD Machu Picchu</Link>
@@ -234,18 +256,24 @@ export default function Navbar() {
             </li>
             <li>
               <Link to="/contacto" className="navbar-link link">
-                Contacto
+                {t("navbar.contactos")}
               </Link>
             </li>
             <li>
-              <Link className="navbar-link link">Blog</Link>
+              <Link className="navbar-link link">{t("navbar.blog")}</Link>
             </li>
           </ul>
           <div className="dropdown-banderas">
             <Button>{bandera}</Button>
             <div className="dropdown-banderas-content">
               {banderas.map((name) => (
-                <a onClick={() => setBandera(name.bandera)} key={name.id}>
+                <a
+                  onClick={() => {
+                    setBandera(name.bandera);
+                    onChangeLenguaje(name.lenguaje);
+                  }}
+                  key={name.id}
+                >
                   {name.bandera}
                 </a>
               ))}
