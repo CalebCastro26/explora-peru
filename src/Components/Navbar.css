@@ -41,7 +41,7 @@ header {
   cursor: pointer;
 }
 
-.top-bar-content .inner > a:hover{
+.top-bar-content .inner > a:hover {
   text-decoration: underline;
 }
 
@@ -92,6 +92,19 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  height: 95px;
+  width: 100%;
+}
+
+.logo-container {
+  height: 95px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 85px;
+  object-fit: cover;
 }
 
 .navbar {
@@ -159,7 +172,6 @@ nav {
   top: 0;
 }
 
-.navbar ul li:focus-within > ul,
 .navbar ul li:hover > ul {
   display: initial;
 }
@@ -230,7 +242,7 @@ nav {
 }
 
 @media screen and (max-width: 405px) {
-  .top-bar-content .inner span {
-    font-size: 10px;
+  .top-bar-content .inner a {
+    font-size: 12px;
   }
 }

@@ -93,7 +93,9 @@ export default function Navbar() {
       </div>
       <nav>
         <Link to="/">
-          <img src="/explora-logo.webp" alt="" />
+          <div className="logo-container">
+            <img src="/logo.png" alt="" className="logo" />
+          </div>
         </Link>
         <Dropdown
           placement="bottomRight"

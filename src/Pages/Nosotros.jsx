@@ -1,8 +1,11 @@
 import "./Nosotros.css";
 import { Card, Tabs } from "antd";
 import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
 export default function Nosotros() {
+  const { t } = useTranslation();
+
   useEffect(() => {
     window.scroll({ top: 0 });
   }, []);
@@ -10,54 +13,35 @@ export default function Nosotros() {
   const { Meta } = Card;
   const tab1 = (
     <div className="tab">
-      <p>
-        Realizamos viajes a la medida para grupos pequeños y grandes. Creamos
-        viajes especializados en arqueología, observación de aves, trekking y
-        gastronomía de acuerdo a su preferencia.
-      </p>
+      <p>{t("nosotros.tab.1")}</p>
       <img src="/destinos/trek-cajamarca-trujillo.jpg" alt="" />
       <img src="/destinos/trek-cajamarca-trujillo.jpg" alt="" />
     </div>
   );
   const tab2 = (
     <div className="tab">
-      <p>
-        Explora Travel ofrece un servicio de calidad y estamos listos para
-        asistirlo durante todo su viaje con una comunicación fluida y constante.
-      </p>
+      <p>{t("nosotros.tab.2")}</p>
       <img src="/destinos/trek-cajamarca-trujillo.jpg" alt="" />
       <img src="/destinos/trek-cajamarca-trujillo.jpg" alt="" />
     </div>
   );
   const tab3 = (
     <div className="tab">
-      <p>
-        Experimentados y apasionados por el Perú, acreditados por el Ministerio
-        de Turismo y Comercio Exterior; con dominio de idiomas, que harán de su
-        viaje en una experiencia única.
-      </p>
+      <p>{t("nosotros.tab.3")}</p>
       <img src="/destinos/trek-cajamarca-trujillo.jpg" alt="" />
       <img src="/destinos/trek-cajamarca-trujillo.jpg" alt="" />
     </div>
   );
   const tab4 = (
     <div className="tab">
-      <p>
-        Diseñamos tours que permiten al viajero entrar en contacto con las
-        comunidades locales; y descubrir la riqueza cultural, geográfica y
-        gastronómica.
-      </p>
+      <p>{t("nosotros.tab.4")}</p>
       <img src="/destinos/trek-cajamarca-trujillo.jpg" alt="" />
       <img src="/destinos/trek-cajamarca-trujillo.jpg" alt="" />
     </div>
   );
   const tab5 = (
     <div className="tab">
-      <p>
-        Valoramos a las comunidades locales, y buscamos que se beneficien
-        directamente de la actividad turística fomentando de manera responsable
-        un desarrollo sostenible.
-      </p>
+      <p>{t("nosotros.tab.5")}</p>
       <img src="/destinos/trek-cajamarca-trujillo.jpg" alt="" />
       <img src="/destinos/trek-cajamarca-trujillo.jpg" alt="" />
     </div>
@@ -97,15 +81,7 @@ export default function Nosotros() {
         <img src="/destinos/trek-cajamarca-trujillo.jpg" alt="" />
       </div>
       <h1>EXPLORA PERÚ, TRAVEL & TASTE</h1>
-      <p>
-        Somos un equipo de profesionales en turismo con más de 20 años de
-        trayectoria, especializados en atención al cliente y servicio
-        personalizado. Sabemos que cada viajero tiene expectativas distintas;
-        por eso creamos experiencias auténticas e inolvidables diseñando viajes
-        a la medida. Somos especialistas en el destino Perú; con el compromiso
-        que nuestros servicios los lleve a disfrutar de la cultura y gastronomía
-        peruana.
-      </p>
+      <p>{t("nosotros")}</p>
       <h3>Por qué Explora Perú</h3>
       <div className="tab-container">
         <Tabs

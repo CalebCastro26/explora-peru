@@ -345,6 +345,23 @@ p {
   .carousel-title {
     font-size: 25px;
   }
+
+  .destinos-card {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .destinos-card div,
+  .destinos-card img {
+    width: 90vh;
+    height: 50vh;
+    border-radius: 10px;
+  }
+
+  .noHover {
+    pointer-events: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -365,14 +382,21 @@ p {
 
   .destinos-card {
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     gap: 20px;
   }
 
-  .destinos-card div {
-    width: 60vh;
-    height: 40vh;
+  .destinos-card div,
+  .destinos-card img {
+    width: 85%;
+    height: 35vh;
     border-radius: 10px;
+  }
+
+  .destinos-one-card {
+    width: 100% !important;
+    margin-left: 60px;
   }
 
   .noHover {
@@ -415,14 +439,27 @@ p {
   }
 
   .destinos-card {
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
+    width: 90%;
   }
 
-  .destinos-card div {
-    width: 99%;
-    height: 200px;
+  .destinos-card div,
+  .destinos-card img {
+    width: 100%;
+    height: 35vh;
     border-radius: 10px;
+  }
+
+  .destinos-one-card {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .noHover {
+    pointer-events: none;
   }
 
   .paquetes-list {
