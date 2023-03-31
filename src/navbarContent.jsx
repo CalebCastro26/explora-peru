@@ -15,7 +15,7 @@ export const items = [
     children: [
       {
         key: "3-1",
-        label: "Por qué Perú?",
+        label: <Link to="/destinos/porqueperu">Por qué Perú?</Link>,
       },
       {
         key: "3-2",

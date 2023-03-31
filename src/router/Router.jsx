@@ -11,6 +11,7 @@ import {
   WhatsAppOutlined,
 } from "@ant-design/icons";
 import { FloatButton } from "antd";
+import PorquePeru from "../Pages/PorquePeru";
 
 export default function Router() {
   return (
@@ -26,6 +27,7 @@ export default function Router() {
       </div>
       <Routes>
         <Route path="/contacto" element={<Contacto />} />
+        <Route path="/destinos/porqueperu" element={<PorquePeru />} />
         <Route path="/nosotros" element={<Nosotros />} />
         <Route index element={<Index />} />
       </Routes>

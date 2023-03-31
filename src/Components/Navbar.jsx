@@ -126,18 +126,20 @@ export default function Navbar() {
               <Link className="navbar-link link">{t("navbar.destinos")}</Link>
               <ul>
                 <li>
-                  <Link className="dropdown-link link">Por qué Perú?</Link>
+                  <Link
+                    to="/destinos/porqueperu"
+                    className="dropdown-link link"
+                  >
+                    Por qué Perú?
+                  </Link>
                 </li>
                 <li>
                   <Link className="dropdown-link link">Mejores Destinos</Link>
                   <ul className="dropdown-destinos">
                     <li className="dropdown-destinos">
                       <Link className="dropdown-link link">
-                        Cuzco - Valle Sagrado
+                        Cuzco - Valle Sagrado - Machu Picchu
                       </Link>
-                    </li>
-                    <li className="dropdown-destinos">
-                      <Link className="dropdown-link link">Machu Picchu</Link>
                     </li>
                     <li className="dropdown-destinos">
                       <Link className="dropdown-link link">
@@ -146,17 +148,17 @@ export default function Navbar() {
                     </li>
                     <li className="dropdown-destinos">
                       <Link className="dropdown-link link">
-                        Arequipa - Cañon del Colca
+                        Arequipa - Cañón del Colca
                       </Link>
                     </li>
                     <li className="dropdown-destinos">
                       <Link className="dropdown-link link">
-                        Paracas - Ica - Lineas de Nazca
+                        Paracas - Ica - Líneas de Nazca
                       </Link>
                     </li>
                     <li className="dropdown-destinos">
                       <Link className="dropdown-link link">
-                        Amazonas: Iquitos & Puerto Maldonado
+                        Amazonia: Iquitos & Puerto Maldonado
                       </Link>
                     </li>
                     <li className="dropdown-destinos">
@@ -171,7 +173,7 @@ export default function Navbar() {
                     </li>
                     <li className="dropdown-destinos">
                       <Link className="dropdown-link link">
-                        Playas: Piura & tumbes
+                        Playas: Piura & Tumbes
                       </Link>
                     </li>
                   </ul>

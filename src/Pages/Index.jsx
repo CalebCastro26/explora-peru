@@ -63,6 +63,11 @@ export default function Index() {
       </section>
       <section id="destinos" className="destinos">
         <h2>Destino Perú - Desiertos, Andes y Amazonia</h2>
+        <p>
+          Perú es un país con gran biodiversidad y contrastes. Con hermosas
+          playas, imponentes montañas y una exuberante selva amazónica.
+          Herederos de una cultura milenaria y una reconocida gastronomía.
+        </p>
         <div className="destinos-card">
           <div className="destinos-one-card noHover">
             <img src="/destinos/trek-cajamarca-amazonas.jpg" alt="" />

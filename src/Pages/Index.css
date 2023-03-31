@@ -138,6 +138,17 @@ p {
   margin-top: 50px;
 }
 
+.destinos > p {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  color: #757575;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 550px;
+}
+
 .destinos h2 {
   text-align: center;
   width: 100%;
@@ -156,6 +167,7 @@ p {
   width: 98%;
   overflow: hidden;
   margin: 0 20px;
+  margin-top: 50px;
 }
 
 .destinos-one-card {
@@ -479,5 +491,24 @@ p {
 
   .carousel-title {
     font-size: 18px;
+  }
+
+  .btn-flotante p {
+    color: white;
+    font-size: 10px;
+  }
+
+  .medida {
+    top: 300px;
+    width: 90px;
+    padding: 1px 0px 1px 5px;
+    background-color: #e6007e;
+  }
+
+  .grupo {
+    top: 360px;
+    width: 90px;
+    padding: 1px 0px 1px 5px;
+    background-color: #08a4c0;
   }
 }

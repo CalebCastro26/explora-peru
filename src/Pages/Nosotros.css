@@ -61,9 +61,11 @@
 
 .tab {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
   padding: 0 15px;
   align-items: center;
+  justify-content: center;
 }
 
 .tab p {
@@ -89,9 +91,73 @@
   object-fit: cover;
 }
 
+.expertos-card {
+  width: 250px;
+}
+
+.expertos-card-title {
+  display: flex;
+  justify-content: center;
+}
+
 .expertos-card-text {
   font-family: "Oxygen", sans-serif;
   font-size: 13px;
   text-align: justify;
   margin-top: 20px !important;
+}
+
+@media screen and (max-width: 1050px) {
+  .nosotros p {
+    text-align: justify;
+    margin: 0 auto;
+    max-width: 700px;
+  }
+
+  .expertos-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .expertos-card {
+    display: flex;
+    width: 650px;
+    height: 330px;
+    justify-content: center;
+    overflow-y: scroll;
+    align-items: center;
+  }
+
+  .img-expertos {
+    margin-left: 5px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nosotros p {
+    text-align: justify;
+    margin: 0 auto;
+    width: 70%;
+    max-width: 390px;
+  }
+
+  .expertos-card {
+    display: flex;
+    flex-direction: column;
+    width: 390px;
+    height: 700px;
+    justify-content: center;
+    overflow-y: scroll;
+    align-items: center;
+  }
+
+  .img-expertos {
+    margin-left: 5px;
+  }
+}
+
+@media screen and (max-width: 405px) {
+  .expertos-card {
+    width: 350px;
+  }
 }

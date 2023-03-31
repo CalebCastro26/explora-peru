@@ -1,11 +1,26 @@
+import ReCAPTCHA from "react-google-recaptcha";
 import "./Contacto.css";
 import { useState, useEffect } from "react";
+import { AutoComplete } from "antd";
 
 export default function Contacto() {
   const [datos, setDatos] = useState({});
+  const [options, setOptions] = useState([]);
 
   useEffect(() => {
     window.scroll({ top: 0 });
+    fetch("https://restcountries.com/v3.1/all")
+      .then((data) => data.json())
+      .then((response) => {
+        let countries = [];
+        response.map((respuesta) => {
+          countries.push({
+            label: respuesta.name.common,
+            value: respuesta.name.common,
+          });
+        });
+        setOptions(countries);
+      });
   }, []);
 
   const handleChange = (e) => {
@@ -25,7 +40,7 @@ export default function Contacto() {
       <h1>Contactanos</h1>
       <div className="contactos-content">
         <div className="contactos-content-left">
-          <h3>Hola! Cuentanos tu plan de viaje</h3>
+          <h3>Estamos atentos a sus preguntas. Escribenos:</h3>
           <form className="form-contactanos">
             <input
               type="text"
@@ -35,12 +50,10 @@ export default function Contacto() {
             />
             <input type="email" placeholder="E-mail" />
             <div className="form-telefono">
-              <input
-                type="text"
-                placeholder="Pais"
+              <AutoComplete
                 className="form-codigo"
-                onChange={handleChange}
-                name="pais"
+                options={options}
+                filterOption={true}
               />
               <input
                 type="tel"
@@ -56,7 +69,13 @@ export default function Contacto() {
               name="descripcion"
               placeholder="Describenos tu plan de viaje"
             />
-            <div className="submit-content">
+            <p style={{ lineHeight: 0 }}>
+              *Mencionar: Número de viajeros, Fechas de viaje, Tipo de Hoteles
+            </p>
+            {/* <div className="recaptcha">
+              <ReCAPTCHA />
+            </div> */}
+            <div className="submit-content" style={{ marginTop: 20 }}>
               <button onClick={submit} type="submit" className="btn-submit">
                 Enviar
               </button>

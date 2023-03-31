@@ -85,6 +85,7 @@ export default function Nosotros() {
       <h3>Por qué Explora Perú</h3>
       <div className="tab-container">
         <Tabs
+          centered
           tabPosition="top"
           type="card"
           items={items}
@@ -94,7 +95,7 @@ export default function Nosotros() {
       <h3>EXPERTOS EN PERÚ</h3>
       <div className="expertos-container">
         <Card
-          style={{ width: 250 }}
+          className="expertos-card"
           cover={
             <img
               className="img-expertos"
@@ -104,7 +105,7 @@ export default function Nosotros() {
           }
         >
           <Meta
-            title="Victor Minaya"
+            title={<p className="expertos-card-title">Victor Minaya</p>}
             description={
               <p className="expertos-card-text">
                 “He sido agente de viajes desde los 19 años, soy Guía Oficial de
@@ -120,7 +121,7 @@ export default function Nosotros() {
           />
         </Card>
         <Card
-          style={{ width: 250 }}
+          className="expertos-card"
           cover={
             <img
               className="img-expertos"
@@ -130,7 +131,7 @@ export default function Nosotros() {
           }
         >
           <Meta
-            title="Magalí Malca"
+            title={<p className="expertos-card-title">Magalí Malca</p>}
             description={
               <p className="expertos-card-text">
                 “Soy de Cajamarca, una ciudad llena de lindos paisajes al norte
@@ -147,7 +148,7 @@ export default function Nosotros() {
           />
         </Card>
         <Card
-          style={{ width: 250 }}
+          className="expertos-card"
           cover={
             <img
               alt="rodrigo"
@@ -157,7 +158,7 @@ export default function Nosotros() {
           }
         >
           <Meta
-            title="Rodrigo Zanabria"
+            title={<p className="expertos-card-title">Rodrigo Zanabria</p>}
             description={
               <p className="expertos-card-text">
                 “Soy de Lima, una ciudad llena de hermosos contrastes. Tengo más
@@ -174,7 +175,7 @@ export default function Nosotros() {
           />
         </Card>
         <Card
-          style={{ width: 250 }}
+          className="expertos-card"
           cover={
             <img
               className="img-expertos"
@@ -184,7 +185,7 @@ export default function Nosotros() {
           }
         >
           <Meta
-            title="Erika Aguirre"
+            title={<p className="expertos-card-title">Erika Aguirre</p>}
             description={
               <p className="expertos-card-text">
                 "Nací y crecí en Lima. Viví a pocas cuadras del centro
