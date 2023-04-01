@@ -59,6 +59,13 @@
   color: red;
 }
 
+.ant-tabs-nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
 .tab {
   display: flex;
   flex-wrap: wrap;
@@ -131,6 +138,18 @@
   .img-expertos {
     margin-left: 5px;
   }
+
+  .tab {
+    flex-direction: column;
+  }
+
+  .tab p {
+    max-width: 300px;
+  }
+
+  .tab img {
+    height: 200px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -154,10 +173,43 @@
   .img-expertos {
     margin-left: 5px;
   }
+
+  .tab p {
+    margin-top: 15px;
+    max-width: 300px;
+  }
+
+  .ant-tabs-nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 360px !important;
+  }
+
+  .tab {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 @media screen and (max-width: 405px) {
   .expertos-card {
     width: 350px;
+  }
+
+  .ant-tabs-nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 100px !important;
+  }
+
+  .tab {
+    margin: 0;
+    padding: 0;
+  }
+
+  .tab img {
+    height: 150px;
   }
 }

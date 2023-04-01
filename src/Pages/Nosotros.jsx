@@ -85,7 +85,7 @@ export default function Nosotros() {
       <h3>Por qué Explora Perú</h3>
       <div className="tab-container">
         <Tabs
-          centered
+          className="tabs"
           tabPosition="top"
           type="card"
           items={items}
