@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import { Dropdown, Button } from "antd";
 import "./Navbar.css";
 import { MenuOutlined } from "@ant-design/icons";
-import { items } from "../navbarContent";
 import { useState, useContext } from "react";
 import { ApplicationContext } from "../context/ApplicationContext";
 import { useTranslation } from "react-i18next";
@@ -17,6 +16,204 @@ export default function Navbar() {
     console.log(lenguaje);
     i18n.changeLanguage(lenguaje);
   };
+
+  const onClick = ({ key }) => {
+    switch (key) {
+      case "8-1":
+        setBandera("🇪🇸");
+        appctx.setDataContext({ lenguaje: "es" });
+        i18n.changeLanguage("es");
+        break;
+      case "8-2":
+        setBandera("🇫🇷");
+        appctx.setDataContext({ lenguaje: "fr" });
+        i18n.changeLanguage("fr");
+        break;
+      case "8-3":
+        setBandera("🇵🇹");
+        appctx.setDataContext({ lenguaje: "pt" });
+        i18n.changeLanguage("pt");
+        break;
+      case "8-4":
+        setBandera("🇬🇧");
+        appctx.setDataContext({ lenguaje: "en" });
+        i18n.changeLanguage("en");
+        break;
+      default:
+        break;
+    }
+  };
+
+  const items = [
+    {
+      key: "1",
+      label: <Link to={"/"}>{t("navbar.inicio")}</Link>,
+    },
+    {
+      key: "2",
+      label: <Link to={"/nosotros"}>{t("navbar.nosotros")}</Link>,
+    },
+    {
+      key: "3",
+      label: <Link>{t("navbar.destinos")}</Link>,
+      children: [
+        {
+          key: "3-1",
+          label: <Link to="/destinos/porqueperu">Por qué Perú?</Link>,
+        },
+        {
+          key: "3-2",
+          label: "Mejores Destino",
+          children: [
+            {
+              key: "3-2-1",
+              label: "Cuzco - Valle Sagrado",
+            },
+            {
+              key: "3-2-2",
+              label: "Machu Picchu",
+            },
+            {
+              key: "3-2-3",
+              label: "Puno - Lago Titicaca",
+            },
+            {
+              key: "3-2-4",
+              label: "Arequipa - Cañon del Colca",
+            },
+            {
+              key: "3-2-5",
+              label: "Paracas - Ica - Lineas de Nazca",
+            },
+            {
+              key: "3-2-6",
+              label: "Amazonas: Iquitos & Puerto Maldonado",
+            },
+            {
+              key: "3-2-7",
+              label: "Lima - Capital Gastronómica",
+            },
+            {
+              key: "3-2-8",
+              label: "Huaraz - Cordillera Blanca",
+            },
+            {
+              key: "3-2-9",
+              label: "Playas: Piura & tumbes",
+            },
+          ],
+        },
+        {
+          key: "3-3",
+          label: "Rutas de Trekking",
+          children: [
+            {
+              key: "3-3-1",
+              label: "Camino Inca",
+            },
+            {
+              key: "3-3-2",
+              label: "Choquequirao",
+            },
+            {
+              key: "3-3-3",
+              label: "Salkantay",
+            },
+            {
+              key: "3-3-4",
+              label: "Huayhuash Trek",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      key: "4",
+      label: <Link>{t("navbar.programas")}</Link>,
+      children: [
+        {
+          key: "4-1",
+          label: "Cusco & Machu Picchu - 05 Días",
+        },
+        {
+          key: "4-2",
+          label: "Perú Clásico - 00 Días",
+        },
+        {
+          key: "4-3",
+          label: "Perú Milenario - 00 Días",
+        },
+        {
+          key: "4-4",
+          label: "Nazca & Paracas - 02 Días",
+        },
+        {
+          key: "4-5",
+          label: "Amazonas - 03 Días",
+        },
+      ],
+    },
+    {
+      key: "5",
+      label: <Link>{t("navbar.highlights")}</Link>,
+      children: [
+        {
+          key: "5-1",
+          label: "FD Machu Picchu",
+        },
+        {
+          key: "5-2",
+          label: "FD Montaña 07 Colores",
+        },
+        {
+          key: "5-3",
+          label: "Camino Inca - 04 Días",
+        },
+        {
+          key: "5-4",
+          label: "Tour Lima Gastronómica",
+        },
+        {
+          key: "5-5",
+          label: "FD Uros + Taquile",
+        },
+        {
+          key: "5-6",
+          label: "Cañón del Colca - 02 Días",
+        },
+      ],
+    },
+    {
+      key: "6",
+      label: <Link to="/contacto">{t("navbar.contactos")}</Link>,
+    },
+    {
+      key: "7",
+      label: <Link>{t("navbar.blog")}</Link>,
+    },
+    {
+      key: "8",
+      label: <Link>{bandera}</Link>,
+      children: [
+        {
+          key: "8-1",
+          label: "🇪🇸",
+        },
+        {
+          key: "8-2",
+          label: "🇫🇷",
+        },
+        {
+          key: "8-3",
+          label: "🇵🇹",
+        },
+        {
+          key: "8-4",
+          label: "🇬🇧",
+        },
+      ],
+    },
+  ];
 
   const banderas = [
     {
@@ -40,10 +237,6 @@ export default function Navbar() {
       lenguaje: "en",
     },
   ];
-
-  const onClick = ({ key }) => {
-    console.log(`Click item with ${key}`);
-  };
 
   return (
     <header>

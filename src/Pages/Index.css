@@ -18,14 +18,14 @@
 }
 
 .medida {
-  top: 300px;
+  top: 140px;
   width: 130px;
   padding: 5px 0px 5px 10px;
   background-color: #e6007e;
 }
 
 .grupo {
-  top: 360px;
+  top: 200px;
   width: 130px;
   padding: 5px 0px 5px 10px;
   background-color: #08a4c0;
@@ -421,6 +421,21 @@ p {
     gap: 40px;
     margin: 30px;
   }
+
+  .btn-flotante p {
+    color: white;
+    font-size: 11px;
+  }
+
+  .medida {
+    width: 90px;
+    padding: 1px 0px 1px 5px;
+  }
+
+  .grupo {
+    width: 90px;
+    padding: 1px 0px 1px 5px;
+  }
 }
 
 @media screen and (max-width: 405px) {
@@ -499,14 +514,12 @@ p {
   }
 
   .medida {
-    top: 300px;
     width: 90px;
     padding: 1px 0px 1px 5px;
     background-color: #e6007e;
   }
 
   .grupo {
-    top: 360px;
     width: 90px;
     padding: 1px 0px 1px 5px;
     background-color: #08a4c0;

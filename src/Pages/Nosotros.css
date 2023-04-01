@@ -181,9 +181,10 @@
 
   .ant-tabs-nav-list {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: start;
-    width: 360px !important;
+    justify-content: center;
+    width: 405px !important;
   }
 
   .tab {
@@ -199,9 +200,11 @@
 
   .ant-tabs-nav-list {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: start;
-    width: 100px !important;
+    width: 400px !important;
+    transform: scale(0.9) !important;
   }
 
   .tab {

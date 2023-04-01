@@ -17,11 +17,11 @@ export default function Router() {
   return (
     <BrowserRouter>
       <Navbar />
-      <div className="btn-flotante medida">
+      <div className="btn-flotante medida flotante-contacto">
         <UserOutlined style={{ color: "white", fontSize: 22 }} />
         <p>VIAJE A LA MEDIDA</p>
       </div>
-      <div className="btn-flotante grupo">
+      <div className="btn-flotante grupo flotante-contacto">
         <TeamOutlined style={{ color: "white", fontSize: 22 }} />
         <p>VIAJE EN GRUPO</p>
       </div>
