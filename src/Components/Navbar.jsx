@@ -330,42 +330,66 @@ export default function Navbar() {
                   <Link className="dropdown-link link">Mejores Destinos</Link>
                   <ul className="dropdown-destinos">
                     <li className="dropdown-destinos">
-                      <Link className="dropdown-link link">
-                        Cuzco - Valle Sagrado - Machu Picchu
+                      <Link
+                        to={"/destinos/mejoresdestinos/Cusco"}
+                        className="dropdown-link link"
+                      >
+                        Cusco - Valle Sagrado - Machu Picchu
                       </Link>
                     </li>
                     <li className="dropdown-destinos">
-                      <Link className="dropdown-link link">
+                      <Link
+                        to={"/destinos/mejoresdestinos/Puno"}
+                        className="dropdown-link link"
+                      >
                         Puno - Lago Titicaca
                       </Link>
                     </li>
                     <li className="dropdown-destinos">
-                      <Link className="dropdown-link link">
+                      <Link
+                        to={"/destinos/mejoresdestinos/Arequipa"}
+                        className="dropdown-link link"
+                      >
                         Arequipa - Cañón del Colca
                       </Link>
                     </li>
                     <li className="dropdown-destinos">
-                      <Link className="dropdown-link link">
+                      <Link
+                        to={"/destinos/mejoresdestinos/Ica"}
+                        className="dropdown-link link"
+                      >
                         Paracas - Ica - Líneas de Nazca
                       </Link>
                     </li>
                     <li className="dropdown-destinos">
-                      <Link className="dropdown-link link">
+                      <Link
+                        to={"/destinos/mejoresdestinos/Amazonia"}
+                        className="dropdown-link link"
+                      >
                         Amazonia: Iquitos & Puerto Maldonado
                       </Link>
                     </li>
                     <li className="dropdown-destinos">
-                      <Link className="dropdown-link link">
+                      <Link
+                        to={"/destinos/mejoresdestinos/Lima"}
+                        className="dropdown-link link"
+                      >
                         Lima - Capital Gastronómica
                       </Link>
                     </li>
                     <li className="dropdown-destinos">
-                      <Link className="dropdown-link link">
+                      <Link
+                        to={"/destinos/mejoresdestinos/Huaraz"}
+                        className="dropdown-link link"
+                      >
                         Huaraz - Cordillera Blanca
                       </Link>
                     </li>
                     <li className="dropdown-destinos">
-                      <Link className="dropdown-link link">
+                      <Link
+                        to={"/destinos/mejoresdestinos/Playas"}
+                        className="dropdown-link link"
+                      >
                         Playas: Piura & Tumbes
                       </Link>
                     </li>

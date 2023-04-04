@@ -12,6 +12,9 @@ import {
 } from "@ant-design/icons";
 import { FloatButton } from "antd";
 import PorquePeru from "../Pages/PorquePeru";
+//import Destinos from "../Pages/Destinos";
+import Page404 from "../Pages/Page404";
+import MejoresDestinos from "../Pages/MejoresDestinos";
 
 export default function Router() {
   return (
@@ -26,7 +29,12 @@ export default function Router() {
         <p>VIAJE EN GRUPO</p>
       </div>
       <Routes>
+        <Route path="/*" element={<Page404 />} />
         <Route path="/contacto" element={<Contacto />} />
+        <Route
+          path="/destinos/mejoresdestinos/:destino"
+          element={<MejoresDestinos />}
+        />
         <Route path="/destinos/porqueperu" element={<PorquePeru />} />
         <Route path="/nosotros" element={<Nosotros />} />
         <Route index element={<Index />} />
