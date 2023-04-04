@@ -1,7 +1,7 @@
 import ReCAPTCHA from "react-google-recaptcha";
 import "./Contacto.css";
 import { useState, useEffect } from "react";
-import { AutoComplete } from "antd";
+import { AutoComplete, Button, Input } from "antd";
 
 export default function Contacto() {
   const [datos, setDatos] = useState({});
@@ -42,43 +42,50 @@ export default function Contacto() {
         <div className="contactos-content-left">
           <h3>Estamos atentos a sus preguntas. Escribenos:</h3>
           <form className="form-contactanos">
-            <input
+            <Input
               type="text"
               placeholder="Nombre Apellido*"
               onChange={handleChange}
               name="nombre"
             />
-            <input type="email" placeholder="E-mail" />
+            <Input
+              type="email"
+              placeholder="E-mail"
+              onChange={handleChange}
+              name="email"
+            />
             <div className="form-telefono">
               <AutoComplete
                 className="form-codigo"
                 options={options}
                 filterOption={true}
+                style={{ width: 150 }}
+                placeholder="Busca tu pais"
               />
-              <input
+              <Input
                 type="tel"
                 maxLength="10"
                 placeholder="Móvil"
-                className="form-movil"
                 onChange={handleChange}
                 name="movil"
               />
             </div>
-            <textarea
+            <Input.TextArea
               onChange={handleChange}
               name="descripcion"
               placeholder="Describenos tu plan de viaje"
+              style={{ resize: "none", height: 150 }}
             />
-            <p style={{ lineHeight: 0 }}>
+            <p>
               *Mencionar: Número de viajeros, Fechas de viaje, Tipo de Hoteles
             </p>
             {/* <div className="recaptcha">
               <ReCAPTCHA />
             </div> */}
             <div className="submit-content" style={{ marginTop: 20 }}>
-              <button onClick={submit} type="submit" className="btn-submit">
+              <Button onClick={submit} className="btn-submit" type="primary">
                 Enviar
-              </button>
+              </Button>
             </div>
           </form>
         </div>

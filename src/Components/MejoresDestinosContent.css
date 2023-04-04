@@ -1,12 +1,15 @@
 .MejoresDestinosContent {
   flex: 0.8;
+}
+
+.MejoresDestinosContent-informacion {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.MejoresDestinosContent > h1 {
+.MejoresDestinosContent-informacion > h1 {
   text-align: center;
   width: 100%;
   margin: 0 0 30px 0;
@@ -19,14 +22,60 @@
   font-weight: bold;
 }
 
-.MejoresDestinosContent > p {
+.MejoresDestinosContent-informacion > p {
   min-width: 900px;
   text-align: justify;
 }
 
 .MejoresDestinosContent-informacion {
+  border: 1px solid lightgray;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  padding-top: 20px;
+}
+
+.MejoresDestinosContent-informacion-header {
   display: flex;
-  min-width: 900px;
-  justify-content: space-between;
+  width: 100%;
+  justify-content: space-evenly;
   margin-top: 50px;
+}
+
+.MejoresDestinosContent-foot {
+  display: flex;
+  align-self: flex-end;
+  margin-right: 30px;
+}
+
+.MejoresDestinosContent-foot__bottom {
+  text-align: left;
+  padding: 10px;
+  border: 1px solid lightgray;
+  background-color: rgb(247, 246, 246);
+  border-radius: 10px;
+  margin-top: 10px;
+  width: 450px;
+}
+
+.MejoresDestinosContent-foot__bottom > p {
+  font-size: 15px;
+  padding-bottom: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.MejoresDestinosContent-foot__recentItem {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+  color: lightgray;
+  font-weight: 400;
+  margin-bottom: 5px;
+  padding: 2px;
+}
+
+.sidebar__recentItem > p {
+  padding: 0 5px;
 }

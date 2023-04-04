@@ -146,6 +146,7 @@ nav {
   width: 120px;
   background-color: white;
   display: none;
+  border-radius: 5px;
 }
 
 .dropdown-link {
@@ -164,6 +165,8 @@ nav {
 .navbar ul li ul li {
   top: 0;
   width: fit-content;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -191,6 +194,7 @@ nav {
   background-color: white;
   min-width: fit-content;
   z-index: 1;
+  border-radius: 5px;
 }
 
 .dropdown-banderas-content a {

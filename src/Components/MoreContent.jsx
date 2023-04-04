@@ -1,10 +1,12 @@
 import React from "react";
 import "./MoreContent.css";
-import { destinosList } from "../data/destinosList";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { ApplicationContext } from "../context/ApplicationContext";
 
 export default function MoreContent({ destinos }) {
-  const findDestino = destinosList.find((destino) => destino.name === destinos);
+  const appctx = useContext(ApplicationContext);
+  const DESTINO_GLOBAL = appctx.data.destinoGlobal;
 
   const programas = ({ id, nombre, link, descripcion }) => (
     <div key={id} className="MoreContent__article">
@@ -22,7 +24,7 @@ export default function MoreContent({ destinos }) {
         <div className="MoreContent__header">
           <h2>Tours y Programas</h2>
         </div>
-        {findDestino.programa.map((pro) => programas(pro))}
+        {DESTINO_GLOBAL?.programa.map((pro) => programas(pro))}
       </div>
     </div>
   );

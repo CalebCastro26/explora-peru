@@ -5,9 +5,21 @@ import { useParams } from "react-router-dom";
 import Page404 from "./Page404";
 import "./MejoresDestinos.css";
 import { destinosList } from "../data/destinosList";
+import { useContext, useEffect, useState } from "react";
+import { ApplicationContext } from "../context/ApplicationContext";
 export default function MejoresDestinos() {
+  /* Verifica si existe el destino */
   const { destino } = useParams();
   const findIndex = destinosList.findIndex((d) => d.name === destino);
+  const findDestino = destinosList.find((des) => des.name === destino);
+  const [current, setCurrent] = useState(0);
+  const appctx = useContext(ApplicationContext);
+  useEffect(() => {
+    appctx.setDataContext({
+      ...appctx.data,
+      destinoGlobal: findDestino,
+    });
+  }, [destino]);
 
   return findIndex === -1 ? (
     <Page404 />
@@ -19,9 +31,9 @@ export default function MejoresDestinos() {
         <img src="/destinos/trek-cajamarca-trujillo.jpg" alt="" />
       </div>
       <div className="mejoresDestinos-content">
-        <Sidebar destinos={destino} />
-        <MejoresDestinosContent destinos={destino} />
-        <MoreContent destinos={destino} />
+        <Sidebar setCurrent={setCurrent} />
+        <MejoresDestinosContent current={current} />
+        <MoreContent />
       </div>
     </div>
   );

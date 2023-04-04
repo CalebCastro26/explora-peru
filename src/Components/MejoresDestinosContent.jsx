@@ -1,35 +1,47 @@
 import "./MejoresDestinosContent.css";
-import { destinosList } from "../data/destinosList";
+import { useContext } from "react";
+import { ApplicationContext } from "../context/ApplicationContext";
+
 import { Tabs } from "antd";
 
-export default function MejoresDestinosContent({ destinos }) {
-  const findDestino = destinosList.find((destino) => destino.name === destinos);
-  const items = [
-    {
-      key: "1",
-      label: `Información`,
-      children: `Información`,
-    },
-    {
-      key: "2",
-      label: `Atractivos`,
-      children: `Atractivos`,
-    },
-  ];
+export default function MejoresDestinosContent({ current }) {
+  const appctx = useContext(ApplicationContext);
+  const DESTINO_GLOBAL = appctx.data.destinoGlobal;
 
   return (
     <div className="MejoresDestinosContent">
-      <h1>{findDestino.name}</h1>
-      <p>{findDestino.descripcion}</p>
-      <br />
-      <p>{findDestino.descripcion2}</p>
       <div className="MejoresDestinosContent-informacion">
-        <Tabs items={items} style={{ width: 400, margin: "0 auto" }}></Tabs>
-        <img
-          src="/destinos/trek-cajamarca-trujillo.jpg"
-          alt=""
-          style={{ height: 250 }}
-        />
+        <h1>
+          {DESTINO_GLOBAL?.name} - {DESTINO_GLOBAL?.destinos[current].nombre}{" "}
+        </h1>
+        <p>{DESTINO_GLOBAL?.descripcion}</p>
+        <br />
+        <p>{DESTINO_GLOBAL?.descripcion2}</p>
+        <div className="MejoresDestinosContent-informacion-header">
+          <Tabs
+            items={DESTINO_GLOBAL?.destinos[current].items}
+            style={{ width: 600 }}
+          ></Tabs>
+          <img
+            src="/destinos/trek-cajamarca-trujillo.jpg"
+            alt=""
+            style={{ height: 250 }}
+          />
+        </div>
+        <div className="MejoresDestinosContent-foot">
+          <div className="MejoresDestinosContent-foot__bottom">
+            <p>Tips de Viaje:</p>
+            {DESTINO_GLOBAL?.tips.map((tip, index) => (
+              <div
+                key={index}
+                className="MejoresDestinosContent-foot__recentItem"
+              >
+                <img src="/explora-icon.webp" height="32" />
+                <p>{tip}</p>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );

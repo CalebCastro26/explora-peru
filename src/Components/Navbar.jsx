@@ -67,39 +67,67 @@ export default function Navbar() {
           children: [
             {
               key: "3-2-1",
-              label: "Cuzco - Valle Sagrado",
+              label: (
+                <Link to="/destinos/mejoresdestinos/Cusco">
+                  Cuzco - Valle Sagrado - Machu Picchu
+                </Link>
+              ),
             },
             {
               key: "3-2-2",
-              label: "Machu Picchu",
+              label: (
+                <Link to="/destinos/mejoresdestinos/Puno">
+                  Puno - Lago Titicaca
+                </Link>
+              ),
             },
             {
               key: "3-2-3",
-              label: "Puno - Lago Titicaca",
+              label: (
+                <Link to="/destinos/mejoresdestinos/Arequipa">
+                  Arequipa - Cañon del Colca
+                </Link>
+              ),
             },
             {
               key: "3-2-4",
-              label: "Arequipa - Cañon del Colca",
+              label: (
+                <Link to="/destinos/mejoresdestinos/Ica">
+                  Paracas - Ica - Lineas de Nazca
+                </Link>
+              ),
             },
             {
               key: "3-2-5",
-              label: "Paracas - Ica - Lineas de Nazca",
+              label: (
+                <Link to="/destinos/mejoresdestinos/Amazonia">
+                  Amazonia: Iquitos & Puerto Maldonado
+                </Link>
+              ),
             },
             {
               key: "3-2-6",
-              label: "Amazonas: Iquitos & Puerto Maldonado",
+              label: (
+                <Link to="/destinos/mejoresdestinos/Lima">
+                  Lima - Capital Gastronómica
+                </Link>
+              ),
             },
             {
               key: "3-2-7",
-              label: "Lima - Capital Gastronómica",
+              label: (
+                <Link to="/destinos/mejoresdestinos/Huaraz">
+                  Huaraz - Cordillera Blanca
+                </Link>
+              ),
             },
             {
               key: "3-2-8",
-              label: "Huaraz - Cordillera Blanca",
-            },
-            {
-              key: "3-2-9",
-              label: "Playas: Piura & tumbes",
+              label: (
+                <Link to="/destinos/mejoresdestinos/Playas">
+                  Playas: Piura & Tumbes
+                </Link>
+              ),
             },
           ],
         },

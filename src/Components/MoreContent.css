@@ -1,18 +1,18 @@
 .MoreContent {
-  flex: 0.3;
+  flex: 0.25;
 }
 
 .MoreContent__contain {
   position: sticky;
-  top: 80px;
-  width: 190px;
+  top: 110px;
+  width: 250px;
   background-color: white;
   border-radius: 10px;
   border: 1px solid lightgray;
   height: fit-content;
   padding-bottom: 10px;
   margin-left: 20px;
-  margin-top: 70px;
+  margin-top: 10px;
 }
 
 .MoreContent__header {

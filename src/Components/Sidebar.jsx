@@ -1,12 +1,21 @@
 import "./Sidebar.css";
-import { destinosList } from "../data/destinosList";
+import { useContext } from "react";
+import { ApplicationContext } from "../context/ApplicationContext";
 
-export default function Sidebar({ destinos }) {
-  const findDestino = destinosList.find((destino) => destino.name === destinos);
+export default function Sidebar({ setCurrent }) {
+  const appctx = useContext(ApplicationContext);
+  const DESTINO_GLOBAL = appctx.data.destinoGlobal;
 
-  const recentItem = (topic) => (
-    <div key={topic} className="sidebar__recentItem">
-      <p>{topic}</p>
+  const recentItem = (destino) => (
+    <div
+      key={destino.id}
+      className="sidebar__recentItem"
+      onClick={() => {
+        setCurrent(destino.id);
+      }}
+    >
+      <ion-icon name="airplane-outline"></ion-icon>
+      <p>{destino.nombre}</p>
     </div>
   );
 
@@ -14,7 +23,7 @@ export default function Sidebar({ destinos }) {
     <div className="Sidebar">
       <div className="sidebar__bottom">
         <p>Más destinos:</p>
-        {findDestino.destinos.map((destino) => {
+        {DESTINO_GLOBAL?.destinos.map((destino) => {
           return recentItem(destino);
         })}
       </div>

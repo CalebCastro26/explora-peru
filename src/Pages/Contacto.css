@@ -38,79 +38,12 @@
   display: flex;
   flex-direction: column;
   margin-top: 20px;
-}
-
-.form-contactanos label {
-  font-family: "Open Sans", sans-serif;
-  font-size: 14px;
-  margin: 5px 0;
-}
-
-.form-contactanos input {
-  padding: 9px 8px;
-  font-family: "Open Sans", sans-serif;
-  color: #373737;
-  font-size: 14px;
-  border-radius: 5px;
-  border: 1px solid #555555;
-  outline: none;
-  margin: 10px 0;
-  letter-spacing: 1px;
+  gap: 10px;
 }
 
 .form-telefono {
   display: flex;
-  width: 100%;
-  gap: 10px;
-}
-
-.ant-select-selector {
-  border: none !important;
-  background: none !important;
-}
-
-.ant-select-focused {
-  border: none !important;
-  background: none !important;
-}
-
-.form-contactanos .form-codigo {
-  width: 150px;
-  padding: 9px 8px;
-  font-family: "Open Sans", sans-serif;
-  color: #373737;
-  font-size: 14px;
-  border-radius: 5px;
-  border: 1px solid #555555;
-  outline: none;
-  margin: 10px 0;
-  letter-spacing: 1px;
-}
-
-.form-contactanos .form-movil {
-  width: 100%;
-}
-
-.form-contactanos input:focus {
-  border: 1px solid #e6007e;
-}
-
-.form-contactanos textarea {
-  padding: 12px 8px;
-  height: 100px;
-  color: #373737;
-  font-family: "Open Sans", sans-serif;
-  font-size: 14px;
-  border-radius: 5px;
-  border: 1px solid #555555;
-  outline: none;
-  margin: 10px 0;
-  letter-spacing: 1px;
-  resize: none;
-}
-
-.form-contactanos textarea:focus {
-  border: 1px solid #e6007e;
+  gap: 5px;
 }
 
 .submit-content {
@@ -120,21 +53,7 @@
 
 .btn-submit {
   width: 200px;
-  padding: 12px 8px;
-  outline: none;
-  border: none;
-  border-radius: 10px;
-  background-color: #f52d8a;
-  color: white;
-  cursor: pointer;
-}
-
-.btn-submit:hover {
-  background-color: rgba(245, 45, 138, 0.9);
-}
-
-.btn-submit:active {
-  background-color: rgba(245, 45, 138, 0.8);
+  padding: 0px 8px;
 }
 
 .contactos-content-right {

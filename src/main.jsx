@@ -3,9 +3,18 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import "./i18n";
 import { ApplicationContextComponent } from "./context/ApplicationContext";
+import { ConfigProvider } from "antd";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <ApplicationContextComponent>
-    <App />
+    <ConfigProvider
+      theme={{
+        token: {
+          colorPrimary: "#e6007e",
+        },
+      }}
+    >
+      <App />
+    </ConfigProvider>
   </ApplicationContextComponent>
 );
