@@ -15,6 +15,7 @@ import PorquePeru from "../Pages/PorquePeru";
 import Page404 from "../Pages/Page404";
 import MejoresDestinos from "../Pages/MejoresDestinos";
 import FloatingButton from "../Components/FloatingButton";
+import RutasTrekking from "../Pages/RutasTrekking";
 
 export default function Router() {
   return (
@@ -36,6 +37,10 @@ export default function Router() {
         <Route
           path="/destinos/mejoresdestinos/:destino"
           element={<MejoresDestinos />}
+        />
+        <Route
+          path="/destinos/rutastrekking/:ruta"
+          element={<RutasTrekking />}
         />
         <Route path="/destinos/porqueperu" element={<PorquePeru />} />
         <Route path="/nosotros" element={<Nosotros />} />

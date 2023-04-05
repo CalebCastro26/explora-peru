@@ -2,13 +2,6 @@
   flex: 0.8;
 }
 
-.MejoresDestinosContent-informacion {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 913px;
-}
-
 .MejoresDestinosContent-informacion > h1 {
   text-align: center;
   width: 100%;
@@ -28,12 +21,15 @@
 }
 
 .MejoresDestinosContent-informacion {
+  display: flex;
+  flex-direction: column;
   border: 1px solid lightgray;
-  padding: 10px;
+  padding: 30px;
   background-color: white;
   border-radius: 10px;
-  padding-top: 20px;
+  padding-top: 50px;
   height: fit-content;
+  align-items: center;
 }
 
 .MejoresDestinosContent-informacion-header {

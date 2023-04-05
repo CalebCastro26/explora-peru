@@ -137,19 +137,29 @@ export default function Navbar() {
           children: [
             {
               key: "3-3-1",
-              label: "Camino Inca",
+              label: (
+                <Link to="/destinos/rutastrekking/caminoInca">Camino Inca</Link>
+              ),
             },
             {
               key: "3-3-2",
-              label: "Choquequirao",
+              label: (
+                <Link to="/destinos/rutastrekking/choqueriao">
+                  Choquequirao
+                </Link>
+              ),
             },
             {
               key: "3-3-3",
-              label: "Salkantay",
+              label: (
+                <Link to="/destinos/rutastrekking/salkantay">Salkantay</Link>
+              ),
             },
             {
               key: "3-3-4",
-              label: "Huayhuash Trek",
+              label: (
+                <Link to="/destinos/rutastrekking/huayhuash">Huayhuash</Link>
+              ),
             },
           ],
         },
@@ -427,16 +437,34 @@ export default function Navbar() {
                   <Link className="dropdown-link link">Rutas de Trekking</Link>
                   <ul className="dropdown-destinos">
                     <li className="dropdown-destinos">
-                      <Link className="dropdown-link link">Camino Inca</Link>
+                      <Link
+                        to={"/destinos/rutastrekking/caminoInca"}
+                        className="dropdown-link link"
+                      >
+                        Camino Inca
+                      </Link>
                     </li>
                     <li className="dropdown-destinos">
-                      <Link className="dropdown-link link">Choquequirao</Link>
+                      <Link
+                        to={"/destinos/rutastrekking/choqueriao"}
+                        className="dropdown-link link"
+                      >
+                        Choquequirao
+                      </Link>
                     </li>
                     <li className="dropdown-destinos">
-                      <Link className="dropdown-link link">Salkantay </Link>
+                      <Link
+                        to={"/destinos/rutastrekking/salkantay"}
+                        className="dropdown-link link"
+                      >
+                        Salkantay{" "}
+                      </Link>
                     </li>
                     <li className="dropdown-destinos">
-                      <Link className="dropdown-link link">
+                      <Link
+                        to={"/destinos/rutastrekking/huayhuash"}
+                        className="dropdown-link link"
+                      >
                         Huayhuash Trek{" "}
                       </Link>
                     </li>

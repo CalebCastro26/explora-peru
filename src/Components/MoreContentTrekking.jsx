@@ -1,16 +1,16 @@
 import React from "react";
-import "./MoreContent.css";
+import "./MoreContentTrekking.css";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { ApplicationContext } from "../context/ApplicationContext";
 
-export default function MoreContent() {
+export default function MoreContentTrekking() {
   const appctx = useContext(ApplicationContext);
-  const DESTINO_GLOBAL = appctx.data.destinoGlobal;
+  const TREK_GLOBAL = appctx.data.trekGlobal;
 
   const programas = ({ id, nombre, link, descripcion }) => (
-    <div key={id} className="MoreContent__article">
-      <div className="MoreContent__articleLeft"></div>
+    <div key={id} className="MoreContentTrekking__article">
+      <div className="MoreContentTrekking__articleLeft"></div>
       <Link to={`/${link}`} className="MoreContent__articleRight">
         <h4>{nombre}</h4>
         <p>{descripcion}</p>
@@ -19,12 +19,12 @@ export default function MoreContent() {
   );
 
   return (
-    <div className="MoreContent">
-      <div className="MoreContent__contain">
-        <div className="MoreContent__header">
+    <div className="MoreContentTrekking">
+      <div className="MoreContentTrekking__contain">
+        <div className="MoreContentTrekking__header">
           <h2>Tours y Programas</h2>
         </div>
-        {DESTINO_GLOBAL?.programa.map((pro) => programas(pro))}
+        {TREK_GLOBAL?.programa.map((pro) => programas(pro))}
       </div>
     </div>
   );
