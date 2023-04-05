@@ -1,28 +1,21 @@
-import "./MejoresDestinosContent.css";
-import LimaGastronomica from "./LimaGastronomica";
+import React from "react";
 import { useContext } from "react";
 import { ApplicationContext } from "../context/ApplicationContext";
 import { Tabs } from "antd";
 
-export default function MejoresDestinosContent({ current }) {
+export default function TrekkingContent() {
   const appctx = useContext(ApplicationContext);
-  const DESTINO_GLOBAL = appctx.data.destinoGlobal;
+  const TREK_GLOBAL = appctx.data.trekGlobal;
 
   return (
     <div className="MejoresDestinosContent">
       <div className="MejoresDestinosContent-informacion">
-        <h1>
-          {DESTINO_GLOBAL?.name} - {DESTINO_GLOBAL?.destinos[current].nombre}{" "}
-        </h1>
-        <p>{DESTINO_GLOBAL?.descripcion}</p>
-        {DESTINO_GLOBAL?.descripcion2 && <br />}
-        {DESTINO_GLOBAL?.descripcion2 && <p>{DESTINO_GLOBAL?.descripcion2}</p>}
+        <h1>{TREK_GLOBAL?.displayName}</h1>
+        <p>{TREK_GLOBAL?.descripcion}</p>
+        {TREK_GLOBAL?.descripcion2 && <br />}
+        {TREK_GLOBAL?.descripcion2 && <p>{TREK_GLOBAL?.descripcion2}</p>}
         <div className="MejoresDestinosContent-informacion-header">
-          <Tabs
-            items={DESTINO_GLOBAL?.destinos[current].items}
-            style={{ width: 600, display: "flex", flexWrap: "wrap" }}
-          ></Tabs>
-
+          <Tabs items={TREK_GLOBAL?.items} style={{ width: 600 }} />
           <div className="MejoresDestinosContent-foot">
             <img
               src="/destinos/trek-cajamarca-trujillo.jpg"
@@ -31,7 +24,7 @@ export default function MejoresDestinosContent({ current }) {
             />
             <div className="MejoresDestinosContent-foot__bottom">
               <p>Tips de Viaje:</p>
-              {DESTINO_GLOBAL?.tips.map((tip, index) => (
+              {TREK_GLOBAL?.tips.map((tip, index) => (
                 <div
                   key={index}
                   className="MejoresDestinosContent-foot__recentItem"
@@ -44,7 +37,6 @@ export default function MejoresDestinosContent({ current }) {
           </div>
         </div>
       </div>
-      {DESTINO_GLOBAL?.name === "Lima" && <LimaGastronomica />}
     </div>
   );
 }

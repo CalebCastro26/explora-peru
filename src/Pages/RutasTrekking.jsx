@@ -6,6 +6,7 @@ import "./RutasTrekking.css";
 import MoreContentTrekking from "../Components/MoreContentTrekking.jsx";
 import { useContext, useEffect } from "react";
 import { ApplicationContext } from "../context/ApplicationContext.jsx";
+import TrekkingContent from "../Components/TrekkingContent.jsx";
 
 export default function RutasTrekking() {
   const { ruta } = useParams();
@@ -31,7 +32,7 @@ export default function RutasTrekking() {
       </div>
       <div className="rutasTrekking-content">
         <SidebarTrekking rutasFiltradas={rutasFiltradas} />
-        <div style={{ flex: 0.8 }}></div>
+        <TrekkingContent />
         <MoreContentTrekking />
       </div>
     </div>

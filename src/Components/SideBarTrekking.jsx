@@ -1,12 +1,7 @@
 import "./SidebarTrekking.css";
-import { useContext } from "react";
 import { Link } from "react-router-dom";
-import { ApplicationContext } from "../context/ApplicationContext";
 
 export default function SidebarTrekking({ rutasFiltradas }) {
-  const appctx = useContext(ApplicationContext);
-  const DESTINO_GLOBAL = appctx.data;
-
   const recentItem = (ruta) => (
     <Link to={`/destinos/rutastrekking/${ruta.name}`}>
       <div
