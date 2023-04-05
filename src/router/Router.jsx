@@ -12,22 +12,24 @@ import {
 } from "@ant-design/icons";
 import { FloatButton } from "antd";
 import PorquePeru from "../Pages/PorquePeru";
-//import Destinos from "../Pages/Destinos";
 import Page404 from "../Pages/Page404";
 import MejoresDestinos from "../Pages/MejoresDestinos";
+import FloatingButton from "../Components/FloatingButton";
 
 export default function Router() {
   return (
     <BrowserRouter>
       <Navbar />
-      <div className="btn-flotante medida flotante-contacto">
-        <UserOutlined style={{ color: "white", fontSize: 22 }} />
-        <p>VIAJE A LA MEDIDA</p>
-      </div>
-      <div className="btn-flotante grupo flotante-contacto">
-        <TeamOutlined style={{ color: "white", fontSize: 22 }} />
-        <p>VIAJE EN GRUPO</p>
-      </div>
+      <FloatingButton
+        texto="VIAJE A LA MEDIDA"
+        Icon={UserOutlined}
+        clase="medida"
+      />
+      <FloatingButton
+        texto="VIAJE EN GRUPO"
+        Icon={TeamOutlined}
+        clase="grupo"
+      />
       <Routes>
         <Route path="/*" element={<Page404 />} />
         <Route path="/contacto" element={<Contacto />} />

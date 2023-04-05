@@ -1,6 +1,10 @@
 import React from "react";
-import "./FloatingButton.css";
 
-export default function FloatingButton({ title, id }) {
-  return <a className={id}>{title}</a>;
+export default function FloatingButton({ texto, Icon, clase }) {
+  return (
+    <div className={`btn-flotante ${clase} flotante-contacto`}>
+      <Icon style={{ color: "white", fontSize: 22 }} />
+      <p>{texto}</p>
+    </div>
+  );
 }
