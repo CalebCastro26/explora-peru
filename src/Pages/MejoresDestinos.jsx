@@ -19,6 +19,7 @@ export default function MejoresDestinos() {
       ...appctx.data,
       destinoGlobal: findDestino,
     });
+    setCurrent(0);
   }, [destino]);
 
   return findIndex === -1 ? (
