@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Dropdown, Button } from "antd";
 import "./Navbar.css";
 import { MenuOutlined } from "@ant-design/icons";
-import { useState, useContext } from "react";
+import { useState, useContext, useEffect } from "react";
 import { ApplicationContext } from "../context/ApplicationContext";
 import { useTranslation } from "react-i18next";
 
@@ -10,6 +10,22 @@ export default function Navbar() {
   const appctx = useContext(ApplicationContext);
   const { t, i18n } = useTranslation();
   const [bandera, setBandera] = useState("🇪🇸");
+  const [shrink, setShrink] = useState(false);
+
+  useEffect(() => {
+    function handleScroll() {
+      if (window.pageYOffset > 45) {
+        setShrink(true);
+      } else {
+        setShrink(false);
+      }
+    }
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const onChangeLenguaje = (lenguaje) => {
     appctx.setDataContext({ lenguaje });
@@ -322,10 +338,15 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-      <nav>
+      <nav id="nav" className={shrink ? "shrink" : ""}>
         <Link to="/">
           <div className="logo-container">
-            <img src="/logo.png" alt="" className="logo" />
+            <img
+              id="nav-img"
+              src="/logo.png"
+              alt=""
+              className={shrink ? "logo logo-shrink" : "logo"}
+            />
           </div>
         </Link>
         <Dropdown

@@ -2,7 +2,7 @@ header {
   position: sticky;
   z-index: 999;
   top: -35px;
-  border-bottom: 1px solid rgb(173, 173, 173);
+  border-bottom: 1px solid lightgray;
   width: 100%;
 }
 
@@ -92,18 +92,34 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  height: 95px;
+  height: 105px;
   width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.shrink {
+  height: 65px !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+
+#nav-img {
+  transition: all 0.2s ease-in-out;
+}
+
+.logo-shrink {
+  height: 55px !important;
 }
 
 .logo-container {
   height: 95px;
   display: flex;
   align-items: center;
+  padding: 10px 0;
 }
 
 .logo {
-  height: 85px;
+  height: 80px;
   object-fit: cover;
 }
 

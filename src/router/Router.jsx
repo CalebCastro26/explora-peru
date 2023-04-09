@@ -9,6 +9,7 @@ import {
   TeamOutlined,
   UserOutlined,
   WhatsAppOutlined,
+  ArrowUpOutlined,
 } from "@ant-design/icons";
 import { FloatButton } from "antd";
 import PorquePeru from "../Pages/PorquePeru";
@@ -16,8 +17,25 @@ import Page404 from "../Pages/Page404";
 import MejoresDestinos from "../Pages/MejoresDestinos";
 import FloatingButton from "../Components/FloatingButton";
 import RutasTrekking from "../Pages/RutasTrekking";
+import { useEffect, useState } from "react";
 
 export default function Router() {
+  const [flecha, setFlecha] = useState(false);
+
+  useEffect(() => {
+    function handleFlecha() {
+      if (window.pageYOffset > 750) {
+        setFlecha(true);
+      } else {
+        setFlecha(false);
+      }
+    }
+
+    window.addEventListener("scroll", handleFlecha);
+    return () => {
+      window.removeEventListener("scroll", handleFlecha);
+    };
+  }, []);
   return (
     <BrowserRouter>
       <Navbar />
@@ -54,7 +72,7 @@ export default function Router() {
             behavior: "smooth",
           });
         }}
-        icon={<ArrowDownOutlined />}
+        icon={flecha ? <ArrowUpOutlined /> : <ArrowDownOutlined />}
       />
       <FloatButton
         className="float-phone"
@@ -64,7 +82,7 @@ export default function Router() {
             behavior: "smooth",
           });
         }}
-        icon={<ArrowDownOutlined />}
+        icon={flecha ? <ArrowUpOutlined /> : <ArrowDownOutlined />}
       />
       <a
         href="https://api.whatsapp.com/send?phone=51960396110&text=Hola,%20vi%20un%20anuncio%20en%20Facebook%20y%20quisiera%20conocer%20más%20sobre%20tus%20productos"

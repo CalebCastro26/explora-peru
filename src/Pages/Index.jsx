@@ -45,7 +45,7 @@ export default function Index() {
         </Carousel>
       </section>
       <section className="inicio">
-        <h1>Explora Perú, Travel & Taste</h1>
+        <h1>EXPLORA PERÚ, TRAVEL & TASTE</h1>
         <div className="inicio-content">
           <p>
             Perú es un país muy diverso, lleno de culturas vivas, sabores y
@@ -53,21 +53,31 @@ export default function Index() {
             diseñadas según su preferencia, por un equipo con experciencia y
             pasión por los viajes.
           </p>
-          <ul className="inicio-content-ul">
-            <li>Tours a su medida</li>
-            <li>Los mejores guias locales</li>
-            <li>Soporte 24/7 durante su viaje</li>
-            <li>Contacto real con la cultura & gastronomia</li>
-          </ul>
+          <p style={{ fontWeight: "bold" }}>
+            Tours a su medida | Los mejores guias locales | Soporte 24/7 durante
+            su viaje | Contacto real con la cultura & gastronomia
+          </p>
+          {/* <div className="inicio-content-list">
+            <ul className="inicio-content-ul">
+              <li>Tours a su medida</li>
+              <li>Los mejores guias locales</li>
+            </ul>
+            <ul className="inicio-content-ul">
+              <li>Soporte 24/7 durante su viaje</li>
+              <li>Contacto real con la cultura & gastronomia</li>
+            </ul>
+          </div> */}
         </div>
       </section>
       <section id="destinos" className="destinos">
-        <h2>Destino Perú - Desiertos, Andes y Amazonia</h2>
-        <p>
-          Perú es un país con gran biodiversidad y contrastes. Con hermosas
-          playas, imponentes montañas y una exuberante selva amazónica.
-          Herederos de una cultura milenaria y una reconocida gastronomía.
-        </p>
+        <div className="destinos-content">
+          <h2>DESTINO PERÚ - DESIERTOS, ANDES & AMAZONIA</h2>
+          <p>
+            Perú es un país con gran biodiversidad y contrastes. Con hermosas
+            playas, imponentes montañas y una exuberante selva amazónica.
+            Herederos de una cultura milenaria y una reconocida gastronomía.
+          </p>
+        </div>
         <div className="destinos-card">
           <div className="destinos-one-card noHover">
             <img src="/destinos/trek-cajamarca-amazonas.jpg" alt="" />
@@ -114,7 +124,7 @@ export default function Index() {
         </div>
       </section>
       <section id="paquetes" className="paquetes">
-        <h2>Programas más solicitados</h2>
+        <h2>PROGRAMAS MÁS SOLICITADOS</h2>
         <p>
           Estos programas le ofrecen lo mejor de Perú. Recuerde que todos pueden
           cambiarse y modificarse de acuerdo a sus necesidades y preferencias.
@@ -178,7 +188,7 @@ export default function Index() {
         </div>
       </section>
       <section id="highlights" className="highlights">
-        <h2>Highlights en Perú: Inca Trail / Vinincunca/ FD Machu Picchu</h2>
+        <h2>HIGHLIGHTS EN PERÚ: INCA TRAIL / VININCUNCA / FDS MACHU PICCHU</h2>
         <p>
           Estos programas le ofrecen lo mejor de Perú. Recuerde que todos pueden
           cambiarse y modificarse de acuerdo a sus necesidades y preferencias.
