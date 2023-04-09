@@ -143,6 +143,8 @@ p {
 
 .destinos-content {
   border: 1px solid lightgray;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
   background-color: white;
   padding-top: 50px;
   width: 97%;
@@ -241,6 +243,7 @@ p {
 .paquetes {
   border: 1px solid lightgray;
   background-color: white;
+  border-radius: 3px;
   padding-top: 50px;
   width: 97%;
   margin: 0 auto;
@@ -339,6 +342,7 @@ p {
   margin: 0 auto;
   margin-top: 50px;
   padding-bottom: 50px;
+  border-radius: 3px;
 }
 
 .highlights h2 {

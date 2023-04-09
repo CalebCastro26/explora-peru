@@ -1,6 +1,3 @@
-.contacto {
-}
-
 .contacto-img-header {
   display: block;
   width: 100%;
@@ -15,7 +12,7 @@
 }
 
 .contactos-title {
-  width: 80%;
+  width: 90%;
   display: flex;
   align-items: center;
   justify-content: left;

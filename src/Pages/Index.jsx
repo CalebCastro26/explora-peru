@@ -54,19 +54,9 @@ export default function Index() {
             pasión por los viajes.
           </p>
           <p style={{ fontWeight: "bold" }}>
-            Tours a su medida | Los mejores guias locales | Soporte 24/7 durante
-            su viaje | Contacto real con la cultura & gastronomia
+            Tours a su medida | Los mejores guias locales | Soporte 24 / 7
+            durante su viaje | Contacto real con la cultura & gastronomia
           </p>
-          {/* <div className="inicio-content-list">
-            <ul className="inicio-content-ul">
-              <li>Tours a su medida</li>
-              <li>Los mejores guias locales</li>
-            </ul>
-            <ul className="inicio-content-ul">
-              <li>Soporte 24/7 durante su viaje</li>
-              <li>Contacto real con la cultura & gastronomia</li>
-            </ul>
-          </div> */}
         </div>
       </section>
       <section id="destinos" className="destinos">

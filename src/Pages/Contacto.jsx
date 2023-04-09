@@ -47,7 +47,11 @@ export default function Contacto() {
         </div>
         <div className="contactos-content">
           <div className="contactos-content-left">
-            <h3>Estamos atentos a sus preguntas. Escribenos:</h3>
+            <p>
+              Explora Perú Travel & Taste se encuentra en el Perú. Usted puede
+              contactarnos por email, teléfono, Whatsapp o completando el
+              siguiente formulario:
+            </p>
             <form className="form-contactanos">
               <div className="form-item">
                 <Input
