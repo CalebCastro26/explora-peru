@@ -1,13 +1,8 @@
 import "./MejoresDestinosContent.css";
 import LimaGastronomica from "./LimaGastronomica";
-import { useContext } from "react";
-import { ApplicationContext } from "../context/ApplicationContext";
 import { Tabs } from "antd";
 
-export default function MejoresDestinosContent({ current }) {
-  const appctx = useContext(ApplicationContext);
-  const DESTINO_GLOBAL = appctx.data.destinoGlobal;
-
+export default function MejoresDestinosContent({ current, DESTINO_GLOBAL }) {
   return (
     <div className="MejoresDestinosContent">
       <div className="MejoresDestinosContent-informacion">

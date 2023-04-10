@@ -53,6 +53,9 @@ export const rutasTrekkingList = [
     id: 1,
     name: "choqueriao",
     displayName: "Choquequirao",
+    descripcion:
+      "El complejo arqueológico de Choquequirao, llamado también 'La Hermana Sagrada de Machu Picchu' está situado a más de 3000 msnm a una distancia de 100 km de la ciudad del Cuzco. ",
+
     programa: [
       {
         id: 0,

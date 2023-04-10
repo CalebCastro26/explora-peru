@@ -213,27 +213,61 @@ export default function Navbar() {
       children: [
         {
           key: "5-1",
-          label: "FD Machu Picchu",
+          label: <Link to="/highlights/fdmachu-picchu">FD Machu Picchu</Link>,
         },
         {
           key: "5-2",
-          label: "FD Montaña 07 Colores",
+          label: (
+            <Link to="/highlights/fdmontana-colores">
+              FD Montaña 07 Colores
+            </Link>
+          ),
         },
         {
           key: "5-3",
-          label: "Camino Inca - 04 Días",
+          label: (
+            <Link to="/highlights/fdcamino-inca">Camino Inca - 04 Días</Link>
+          ),
         },
         {
           key: "5-4",
-          label: "Tour Lima Gastronómica",
+          label: (
+            <Link to="/highlights/fdlineas-nazca">
+              FD Sobrevuelo Líneas de Nazca (Desde Ica)
+            </Link>
+          ),
         },
         {
           key: "5-5",
-          label: "FD Uros + Taquile",
+          label: (
+            <Link to="/highlights/fdtour-lima">
+              Tour Lima Colonial & Gastronómica
+            </Link>
+          ),
         },
         {
           key: "5-6",
-          label: "Cañón del Colca - 02 Días",
+          label: <Link to="/highlights/fduros-taquile">FD Uros + Taquile</Link>,
+        },
+        {
+          key: "5-7",
+          label: (
+            <Link to="/highlights/fdcanon-colca">
+              Cañón del Colca - 02 Días
+            </Link>
+          ),
+        },
+        {
+          key: "5-8",
+          label: <Link to="/highlights/fdchoquequirao">Choquequirao</Link>,
+        },
+        {
+          key: "5-9",
+          label: (
+            <Link to="/highlights/fdcrucero-amazonas">
+              Crucero por el Amazonas
+            </Link>
+          ),
         },
       ],
     },
@@ -525,29 +559,75 @@ export default function Navbar() {
               <Link className="navbar-link link">{t("navbar.highlights")}</Link>
               <ul className="dropdown-Highlights">
                 <li className="dropdown-Highlights">
-                  <Link className="dropdown-link link">FD Machu Picchu</Link>
+                  <Link
+                    to="/highlights/fdmachu-picchu"
+                    className="dropdown-link link"
+                  >
+                    FD Machu Picchu
+                  </Link>
                 </li>
                 <li className="dropdown-Highlights">
-                  <Link className="dropdown-link link">
+                  <Link
+                    to="/highlights/fdmontana-colores"
+                    className="dropdown-link link"
+                  >
                     FD Montaña 07 Colores
                   </Link>
                 </li>
                 <li className="dropdown-Highlights">
-                  <Link className="dropdown-link link">
+                  <Link
+                    to="/highlights/fdcamino-inca"
+                    className="dropdown-link link"
+                  >
                     Camino Inca - 04 Días{" "}
                   </Link>
                 </li>
                 <li className="dropdown-Highlights">
-                  <Link className="dropdown-link link">
-                    Tour Lima Gastronómica
+                  <Link
+                    to="/highlights/fdlineas-nazca"
+                    className="dropdown-link link"
+                  >
+                    FD Sobrevuelo Líneas de Nazca (Desde Ica)
                   </Link>
                 </li>
                 <li className="dropdown-Highlights">
-                  <Link className="dropdown-link link">FD Uros + Taquile</Link>
+                  <Link
+                    to="/highlights/fdtour-lima"
+                    className="dropdown-link link"
+                  >
+                    Tour Lima Colonial & Gastronómica
+                  </Link>
                 </li>
                 <li className="dropdown-Highlights">
-                  <Link className="dropdown-link link">
+                  <Link
+                    to="/highlights/fduros-taquile"
+                    className="dropdown-link link"
+                  >
+                    FD Uros + Taquile
+                  </Link>
+                </li>
+                <li className="dropdown-Highlights">
+                  <Link
+                    to="/highlights/fdcanon-colca"
+                    className="dropdown-link link"
+                  >
                     Cañón del Colca - 02 Días
+                  </Link>
+                </li>
+                <li className="dropdown-Highlights">
+                  <Link
+                    to="/highlights/fdchoquequirao"
+                    className="dropdown-link link"
+                  >
+                    Choquequirao
+                  </Link>
+                </li>
+                <li className="dropdown-Highlights">
+                  <Link
+                    to="/highlights/fdcrucero-amazonas"
+                    className="dropdown-link link"
+                  >
+                    Crucero por el Amazonas
                   </Link>
                 </li>
               </ul>

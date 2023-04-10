@@ -3,9 +3,8 @@ import { Link } from "react-router-dom";
 
 export default function SidebarTrekking({ rutasFiltradas }) {
   const recentItem = (ruta) => (
-    <Link to={`/destinos/rutastrekking/${ruta.name}`}>
+    <Link to={`/destinos/rutastrekking/${ruta.name}`} key={ruta.id}>
       <div
-        key={ruta.id}
         className="sidebarTrekking__recentItem"
         onClick={() => {
           setCurrent(ruta.id);

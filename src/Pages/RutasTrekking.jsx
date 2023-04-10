@@ -3,10 +3,11 @@ import { useParams } from "react-router-dom";
 import Page404 from "./Page404.jsx";
 import { rutasTrekkingList } from "../data/rutasTrekkingList.jsx";
 import "./RutasTrekking.css";
-import MoreContentTrekking from "../Components/MoreContentTrekking.jsx";
 import { useContext, useEffect } from "react";
 import { ApplicationContext } from "../context/ApplicationContext.jsx";
 import TrekkingContent from "../Components/TrekkingContent.jsx";
+import MoreContent from "../Components/MoreContent.jsx";
+import Sidebar from "../Components/Sidebar.jsx";
 
 export default function RutasTrekking() {
   const { ruta } = useParams();
@@ -21,6 +22,8 @@ export default function RutasTrekking() {
     });
   }, [ruta]);
 
+  const TREK_GLOBAL = appctx.data.trekGlobal;
+
   return findIndex === -1 ? (
     <Page404 />
   ) : (
@@ -32,8 +35,8 @@ export default function RutasTrekking() {
       </div>
       <div className="rutasTrekking-content">
         <SidebarTrekking rutasFiltradas={rutasFiltradas} />
-        <TrekkingContent />
-        <MoreContentTrekking />
+        <TrekkingContent TREK_GLOBAL={TREK_GLOBAL} />
+        <MoreContent titulo="Tours y Programas" DESTINO_GLOBAL={TREK_GLOBAL} />
       </div>
     </div>
   );

@@ -1,13 +1,8 @@
 import React from "react";
 import "./MoreContent.css";
 import { Link } from "react-router-dom";
-import { useContext } from "react";
-import { ApplicationContext } from "../context/ApplicationContext";
 
-export default function MoreContent() {
-  const appctx = useContext(ApplicationContext);
-  const DESTINO_GLOBAL = appctx.data.destinoGlobal;
-
+export default function MoreContent({ DESTINO_GLOBAL, titulo }) {
   const programas = ({ id, nombre, link, descripcion }) => (
     <div key={id} className="MoreContent__article">
       <div className="MoreContent__articleLeft"></div>
@@ -22,7 +17,7 @@ export default function MoreContent() {
     <div className="MoreContent">
       <div className="MoreContent__contain">
         <div className="MoreContent__header">
-          <h2>Tours y Programas</h2>
+          <h2>{titulo}</h2>
         </div>
         {DESTINO_GLOBAL?.programa.map((pro) => programas(pro))}
       </div>

@@ -2,6 +2,7 @@ export const destinosList = [
   {
     id: 1,
     name: "Cusco",
+    displayName: "Cusco",
     descripcion:
       "Cusco,es un extenso territorio que combina Andes y Amazonía. El Valle Sagrado y Machu Picchu se encuentran dentro de la región Cusco, lo que convierte a la ciudad de Cusco en el punto de partida para conocer la magia de los andes y el Imperio Inca.",
     destinos: [
@@ -240,6 +241,7 @@ export const destinosList = [
   {
     id: 2,
     name: "Puno",
+    displayName: "Puno",
     descripcion:
       "Puno, considerada la “Ciudad Folklórica del Perú”, su ubicación estratégica al lado del Lago Titicaca, es un eje entre Arequipa, Cusco y Bolivia, lo que hace un corredor económico y turístico importante, sin olvidar el hermoso paisaje del altiplano.",
     destinos: [
@@ -511,6 +513,7 @@ export const destinosList = [
   {
     id: 3,
     name: "Arequipa",
+    displayName: "Arequipa",
     descripcion:
       "La ciudad de Arequipa, bien llamada “Ciudad Blanca” por sus construcciones en sillar, que es una piedra de origen volcánico. El centro histórico es considerado Patrimonio Mundial por la UNESCO. Arequipa se encuentra rodeada de 3 volcanes: Misti, Chachani y Pichu Pichu.",
     destinos: [
@@ -719,6 +722,7 @@ export const destinosList = [
   {
     id: 4,
     name: "Ica",
+    displayName: "Ica",
     descripcion:
       "La región Ica está a 3 horas de Lima, ubicada en el desierto, es conocida como “La ciudad del eterno sol”. Es famosa por sus dunas y viñedos; donde nació el reconocido aguardiente peruano: el Pisco.\n Es un destino conocido para la práctica de sandboarding y excursiones en buggies; mientras sus atractivos arqueológicos conservan el legado cultural de importantes sociedades prehispánicas como la Paracas y Nazca ",
     destinos: [
@@ -988,6 +992,7 @@ export const destinosList = [
   {
     id: 5,
     name: "Amazonia",
+    displayName: "Amazonia",
     descripcion:
       "Perú es principalmente un país amazónico, siendo la selva más del 60% del territorio. El río Amazonas se origina en los andes peruanos, en Arequipa. La Amazonía es famosa por la calidez de su gente y su gran biodiversidad. La actividad turística responsable es importante para la preservación de sus bosques con gran riqueza de flora y fauna.",
     descripcion2:
@@ -1166,6 +1171,7 @@ export const destinosList = [
   {
     id: 6,
     name: "Lima",
+    displayName: "Lima",
     descripcion:
       "Lima es una ciudad vibrante frente al mar, con excelentes restaurantes, sitios arqueológicos, edificios coloniales, interesantes museos y galerías de arte. La Capital Gastronómica de América Latina posee 03 de los mejores restaurantes del Mundo.",
     descripcion2:
@@ -1413,6 +1419,7 @@ export const destinosList = [
   {
     id: 7,
     name: "Huaraz",
+    displayName: "Huaraz",
     descripcion:
       "Huaraz, conocida como La Suiza Peruana, está ubicada en los andes peruanos. Para los amantes del trekking y la naturaleza ofrece los más bellos paisajes, con picos nevados y lagunas de aguas cristalinas, que tienen su origen en los glaciares del Parque Nacional Huascarán, el cual es Patrimonio Mundial de la Humanidad declarado por la UNESCO. ",
     descripcion2:
@@ -1662,6 +1669,7 @@ export const destinosList = [
   {
     id: 8,
     name: "Playas",
+    displayName: "Playas",
     descripcion:
       "En el norte del Perú encontramos las ciudades de Piura y Tumbes, que nos ofrecen playas paradisíacas, con arena blanca y de aguas calientes.",
     descripcion2:

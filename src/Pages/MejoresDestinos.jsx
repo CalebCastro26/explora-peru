@@ -14,6 +14,7 @@ export default function MejoresDestinos() {
   const findDestino = destinosList.find((des) => des.name === destino);
   const [current, setCurrent] = useState(0);
   const appctx = useContext(ApplicationContext);
+
   useEffect(() => {
     appctx.setDataContext({
       ...appctx.data,
@@ -21,6 +22,8 @@ export default function MejoresDestinos() {
     });
     setCurrent(0);
   }, [destino]);
+
+  const DESTINO_GLOBAL = appctx.data.destinoGlobal;
 
   return findIndex === -1 ? (
     <Page404 />
@@ -33,8 +36,14 @@ export default function MejoresDestinos() {
       </div>
       <div className="mejoresDestinos-content">
         <Sidebar setCurrent={setCurrent} />
-        <MejoresDestinosContent current={current} />
-        <MoreContent />
+        <MejoresDestinosContent
+          current={current}
+          DESTINO_GLOBAL={DESTINO_GLOBAL}
+        />
+        <MoreContent
+          DESTINO_GLOBAL={DESTINO_GLOBAL}
+          titulo="Tours y Programas"
+        />
       </div>
     </div>
   );

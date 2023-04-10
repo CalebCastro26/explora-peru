@@ -3,10 +3,7 @@ import { useContext } from "react";
 import { ApplicationContext } from "../context/ApplicationContext";
 import { Tabs } from "antd";
 
-export default function TrekkingContent() {
-  const appctx = useContext(ApplicationContext);
-  const TREK_GLOBAL = appctx.data.trekGlobal;
-
+export default function TrekkingContent({ TREK_GLOBAL }) {
   return (
     <div className="MejoresDestinosContent">
       <div className="MejoresDestinosContent-informacion">

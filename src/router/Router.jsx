@@ -18,6 +18,7 @@ import MejoresDestinos from "../Pages/MejoresDestinos";
 import FloatingButton from "../Components/FloatingButton";
 import RutasTrekking from "../Pages/RutasTrekking";
 import { useEffect, useState } from "react";
+import Highlights from "../Pages/Highlights";
 
 export default function Router() {
   const [flecha, setFlecha] = useState(false);
@@ -52,13 +53,17 @@ export default function Router() {
       <Routes>
         <Route path="/*" element={<Page404 />} />
         <Route path="/contacto" element={<Contacto />} />
-        <Route
-          path="/destinos/mejoresdestinos/:destino"
-          element={<MejoresDestinos />}
-        />
+        {/* Highlights */}
+        <Route path="/highlights/:highlight" element={<Highlights />} />
+        {/* Programas */}
+        {/* Destinos */}
         <Route
           path="/destinos/rutastrekking/:ruta"
           element={<RutasTrekking />}
+        />
+        <Route
+          path="/destinos/mejoresdestinos/:destino"
+          element={<MejoresDestinos />}
         />
         <Route path="/destinos/porqueperu" element={<PorquePeru />} />
         <Route path="/nosotros" element={<Nosotros />} />
