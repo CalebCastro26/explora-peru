@@ -50,6 +50,10 @@
   margin-top: 20px;
 }
 
+.HighlightsContent__contenidoLeftBottom {
+  margin-top: 50px;
+}
+
 .HighlightsContent__contenidoRight {
   display: flex;
   flex-direction: column;

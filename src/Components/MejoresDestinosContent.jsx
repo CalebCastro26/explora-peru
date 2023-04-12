@@ -16,8 +16,7 @@ export default function MejoresDestinosContent({ current, DESTINO_GLOBAL }) {
           <Tabs
             items={DESTINO_GLOBAL?.destinos[current].items}
             style={{ width: 600, display: "flex", flexWrap: "wrap" }}
-          ></Tabs>
-
+          />
           <div className="MejoresDestinosContent-foot">
             <img
               src="/destinos/trek-cajamarca-trujillo.jpg"

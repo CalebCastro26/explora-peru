@@ -22,7 +22,10 @@ export default function HighlightsContent({ HIGHLIGHT_GLOBAL }) {
               </Collapse>
             </div>
             <div className="HighlightsContent__contenidoLeftBottom">
-              <Tabs></Tabs>
+              <Tabs
+                style={{ width: 600, display: "flex", flexWrap: "wrap" }}
+                items={HIGHLIGHT_GLOBAL?.items}
+              />
             </div>
           </div>
           <div className="HighlightsContent__contenidoRight">
@@ -49,6 +52,18 @@ export default function HighlightsContent({ HIGHLIGHT_GLOBAL }) {
               alt=""
               style={{ height: 250, marginTop: 30 }}
             />
+            <div className="MejoresDestinosContent-foot__bottom">
+              <p>Tips de Viaje:</p>
+              {HIGHLIGHT_GLOBAL?.tips.map((tip, index) => (
+                <div
+                  key={index}
+                  className="MejoresDestinosContent-foot__recentItem"
+                >
+                  <img src="/explora-icon.webp" height="32" />
+                  <p>{tip}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>

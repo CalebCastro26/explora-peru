@@ -52,6 +52,29 @@ export const highlightsList = [
         descripcion: "Descripción 5",
       },
     ],
+    items: [
+      {
+        key: 1,
+        label: "Incluye",
+      },
+      {
+        key: 2,
+        label: "No incluye",
+      },
+      {
+        key: 3,
+        label: "Qué llevar",
+      },
+    ],
+    tips: [
+      "Zapatos de trekking para este tipo de caminata.",
+      "Casaca y/o ropa impermeable.",
+      "Linterna para la noche.",
+      "Cargadores externos debidamente cargados, tomar en cuenta que no hay servicio eléctrico hasta llegar a la ciudad de Machu Picchu o Aguas Calientes.",
+      "Gorra, lentes de sol, protector solar,  protector de labios y repelente para los mosquitos",
+      "Caminar a su propio ritmo e hidratarse, las temperaturas van desde 22° a 4°.",
+      "Antes de realizar esta caminata prepararse y tomar de 2 a 3 días de aclimatación en la ciudad de Cusco, realizando caminatas y en Valle Sagrado también.",
+    ],
   },
   {
     id: 1,
@@ -105,6 +128,29 @@ export const highlightsList = [
         titulo: "Dia 5",
         descripcion: "Descripción 5",
       },
+    ],
+    items: [
+      {
+        key: 1,
+        label: "Incluye",
+      },
+      {
+        key: 2,
+        label: "No incluye",
+      },
+      {
+        key: 3,
+        label: "Qué llevar",
+      },
+    ],
+    tips: [
+      "Zapatos de trekking para este tipo de caminata.",
+      "Casaca y/o ropa impermeable.",
+      "Linterna para la noche.",
+      "Cargadores externos debidamente cargados, tomar en cuenta que no hay servicio eléctrico hasta llegar a la ciudad de Machu Picchu o Aguas Calientes.",
+      "Gorra, lentes de sol, protector solar,  protector de labios y repelente para los mosquitos",
+      "Caminar a su propio ritmo e hidratarse, las temperaturas van desde 22° a 4°.",
+      "Antes de realizar esta caminata prepararse y tomar de 2 a 3 días de aclimatación en la ciudad de Cusco, realizando caminatas y en Valle Sagrado también.",
     ],
   },
   {
@@ -160,6 +206,29 @@ export const highlightsList = [
         descripcion: "Descripción 5",
       },
     ],
+    items: [
+      {
+        key: 1,
+        label: "Incluye",
+      },
+      {
+        key: 2,
+        label: "No incluye",
+      },
+      {
+        key: 3,
+        label: "Qué llevar",
+      },
+    ],
+    tips: [
+      "Zapatos de trekking para este tipo de caminata.",
+      "Casaca y/o ropa impermeable.",
+      "Linterna para la noche.",
+      "Cargadores externos debidamente cargados, tomar en cuenta que no hay servicio eléctrico hasta llegar a la ciudad de Machu Picchu o Aguas Calientes.",
+      "Gorra, lentes de sol, protector solar,  protector de labios y repelente para los mosquitos",
+      "Caminar a su propio ritmo e hidratarse, las temperaturas van desde 22° a 4°.",
+      "Antes de realizar esta caminata prepararse y tomar de 2 a 3 días de aclimatación en la ciudad de Cusco, realizando caminatas y en Valle Sagrado también.",
+    ],
   },
   {
     id: 3,
@@ -213,6 +282,29 @@ export const highlightsList = [
         titulo: "Dia 5",
         descripcion: "Descripción 5",
       },
+    ],
+    items: [
+      {
+        key: 1,
+        label: "Incluye",
+      },
+      {
+        key: 2,
+        label: "No incluye",
+      },
+      {
+        key: 3,
+        label: "Qué llevar",
+      },
+    ],
+    tips: [
+      "Zapatos de trekking para este tipo de caminata.",
+      "Casaca y/o ropa impermeable.",
+      "Linterna para la noche.",
+      "Cargadores externos debidamente cargados, tomar en cuenta que no hay servicio eléctrico hasta llegar a la ciudad de Machu Picchu o Aguas Calientes.",
+      "Gorra, lentes de sol, protector solar,  protector de labios y repelente para los mosquitos",
+      "Caminar a su propio ritmo e hidratarse, las temperaturas van desde 22° a 4°.",
+      "Antes de realizar esta caminata prepararse y tomar de 2 a 3 días de aclimatación en la ciudad de Cusco, realizando caminatas y en Valle Sagrado también.",
     ],
   },
   {
@@ -268,6 +360,29 @@ export const highlightsList = [
         descripcion: "Descripción 5",
       },
     ],
+    items: [
+      {
+        key: 1,
+        label: "Incluye",
+      },
+      {
+        key: 2,
+        label: "No incluye",
+      },
+      {
+        key: 3,
+        label: "Qué llevar",
+      },
+    ],
+    tips: [
+      "Zapatos de trekking para este tipo de caminata.",
+      "Casaca y/o ropa impermeable.",
+      "Linterna para la noche.",
+      "Cargadores externos debidamente cargados, tomar en cuenta que no hay servicio eléctrico hasta llegar a la ciudad de Machu Picchu o Aguas Calientes.",
+      "Gorra, lentes de sol, protector solar,  protector de labios y repelente para los mosquitos",
+      "Caminar a su propio ritmo e hidratarse, las temperaturas van desde 22° a 4°.",
+      "Antes de realizar esta caminata prepararse y tomar de 2 a 3 días de aclimatación en la ciudad de Cusco, realizando caminatas y en Valle Sagrado también.",
+    ],
   },
   {
     id: 5,
@@ -321,6 +436,29 @@ export const highlightsList = [
         titulo: "Dia 5",
         descripcion: "Descripción 5",
       },
+    ],
+    items: [
+      {
+        key: 1,
+        label: "Incluye",
+      },
+      {
+        key: 2,
+        label: "No incluye",
+      },
+      {
+        key: 3,
+        label: "Qué llevar",
+      },
+    ],
+    tips: [
+      "Zapatos de trekking para este tipo de caminata.",
+      "Casaca y/o ropa impermeable.",
+      "Linterna para la noche.",
+      "Cargadores externos debidamente cargados, tomar en cuenta que no hay servicio eléctrico hasta llegar a la ciudad de Machu Picchu o Aguas Calientes.",
+      "Gorra, lentes de sol, protector solar,  protector de labios y repelente para los mosquitos",
+      "Caminar a su propio ritmo e hidratarse, las temperaturas van desde 22° a 4°.",
+      "Antes de realizar esta caminata prepararse y tomar de 2 a 3 días de aclimatación en la ciudad de Cusco, realizando caminatas y en Valle Sagrado también.",
     ],
   },
   {
@@ -376,6 +514,29 @@ export const highlightsList = [
         descripcion: "Descripción 5",
       },
     ],
+    items: [
+      {
+        key: 1,
+        label: "Incluye",
+      },
+      {
+        key: 2,
+        label: "No incluye",
+      },
+      {
+        key: 3,
+        label: "Qué llevar",
+      },
+    ],
+    tips: [
+      "Zapatos de trekking para este tipo de caminata.",
+      "Casaca y/o ropa impermeable.",
+      "Linterna para la noche.",
+      "Cargadores externos debidamente cargados, tomar en cuenta que no hay servicio eléctrico hasta llegar a la ciudad de Machu Picchu o Aguas Calientes.",
+      "Gorra, lentes de sol, protector solar,  protector de labios y repelente para los mosquitos",
+      "Caminar a su propio ritmo e hidratarse, las temperaturas van desde 22° a 4°.",
+      "Antes de realizar esta caminata prepararse y tomar de 2 a 3 días de aclimatación en la ciudad de Cusco, realizando caminatas y en Valle Sagrado también.",
+    ],
   },
   {
     id: 7,
@@ -430,6 +591,29 @@ export const highlightsList = [
         descripcion: "Descripción 5",
       },
     ],
+    items: [
+      {
+        key: 1,
+        label: "Incluye",
+      },
+      {
+        key: 2,
+        label: "No incluye",
+      },
+      {
+        key: 3,
+        label: "Qué llevar",
+      },
+    ],
+    tips: [
+      "Zapatos de trekking para este tipo de caminata.",
+      "Casaca y/o ropa impermeable.",
+      "Linterna para la noche.",
+      "Cargadores externos debidamente cargados, tomar en cuenta que no hay servicio eléctrico hasta llegar a la ciudad de Machu Picchu o Aguas Calientes.",
+      "Gorra, lentes de sol, protector solar,  protector de labios y repelente para los mosquitos",
+      "Caminar a su propio ritmo e hidratarse, las temperaturas van desde 22° a 4°.",
+      "Antes de realizar esta caminata prepararse y tomar de 2 a 3 días de aclimatación en la ciudad de Cusco, realizando caminatas y en Valle Sagrado también.",
+    ],
   },
   {
     id: 8,
@@ -483,6 +667,29 @@ export const highlightsList = [
         titulo: "Dia 5",
         descripcion: "Descripción 5",
       },
+    ],
+    items: [
+      {
+        key: 1,
+        label: "Incluye",
+      },
+      {
+        key: 2,
+        label: "No incluye",
+      },
+      {
+        key: 3,
+        label: "Qué llevar",
+      },
+    ],
+    tips: [
+      "Zapatos de trekking para este tipo de caminata.",
+      "Casaca y/o ropa impermeable.",
+      "Linterna para la noche.",
+      "Cargadores externos debidamente cargados, tomar en cuenta que no hay servicio eléctrico hasta llegar a la ciudad de Machu Picchu o Aguas Calientes.",
+      "Gorra, lentes de sol, protector solar,  protector de labios y repelente para los mosquitos",
+      "Caminar a su propio ritmo e hidratarse, las temperaturas van desde 22° a 4°.",
+      "Antes de realizar esta caminata prepararse y tomar de 2 a 3 días de aclimatación en la ciudad de Cusco, realizando caminatas y en Valle Sagrado también.",
     ],
   },
 ];
