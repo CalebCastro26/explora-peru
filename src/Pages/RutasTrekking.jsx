@@ -7,7 +7,6 @@ import { useContext, useEffect } from "react";
 import { ApplicationContext } from "../context/ApplicationContext.jsx";
 import TrekkingContent from "../Components/TrekkingContent.jsx";
 import MoreContent from "../Components/MoreContent.jsx";
-import Sidebar from "../Components/Sidebar.jsx";
 
 export default function RutasTrekking() {
   const { ruta } = useParams();
@@ -21,6 +20,10 @@ export default function RutasTrekking() {
       trekGlobal: findTrek,
     });
   }, [ruta]);
+
+  useEffect(() => {
+    window.scroll({ top: 0 });
+  }, []);
 
   const TREK_GLOBAL = appctx.data.trekGlobal;
 

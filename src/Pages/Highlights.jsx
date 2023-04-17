@@ -1,12 +1,12 @@
-import { useParams } from "react-router-dom";
-import Page404 from "./Page404";
-import { highlightsList } from "../data/highlightsList.jsx";
 import "./Highlights.css";
+import Page404 from "./Page404";
+import { useParams } from "react-router-dom";
 import { useEffect, useContext } from "react";
-import { ApplicationContext } from "../context/ApplicationContext.jsx";
+import MoreContent from "../Components/MoreContent";
+import { highlightsList } from "../data/highlightsList.jsx";
 import SidebarHighlights from "../Components/SidebarHighlights";
 import HighlightsContent from "../Components/HighlightsContent";
-import MoreContent from "../Components/MoreContent";
+import { ApplicationContext } from "../context/ApplicationContext.jsx";
 
 export default function Highlights() {
   const { highlight } = useParams();
@@ -22,6 +22,10 @@ export default function Highlights() {
       highlightGlobal: findHigh,
     });
   }, [highlight]);
+
+  useEffect(() => {
+    window.scroll({ top: 0 });
+  }, []);
 
   const HIGHLIGHT_GLOBAL = appctx.data.highlightGlobal;
 

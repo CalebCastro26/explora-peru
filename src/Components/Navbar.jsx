@@ -187,23 +187,33 @@ export default function Navbar() {
       children: [
         {
           key: "4-1",
-          label: "Cusco & Machu Picchu - 05 Días",
+          label: (
+            <Link to="/programas/cusco-machupicchu">
+              Cusco & Machu Picchu - 05 Días
+            </Link>
+          ),
         },
         {
           key: "4-2",
-          label: "Perú Clásico - 00 Días",
+          label: (
+            <Link to="/programas/peru-clasico">Perú Clásico - 00 Días</Link>
+          ),
         },
         {
           key: "4-3",
-          label: "Perú Milenario - 00 Días",
+          label: (
+            <Link to="/programas/peru-milenario">Perú Milenario - 00 Días</Link>
+          ),
         },
         {
           key: "4-4",
-          label: "Nazca & Paracas - 02 Días",
+          label: (
+            <Link to="/programas/nazca-paracas">Nazca & Paracas - 02 Días</Link>
+          ),
         },
         {
           key: "4-5",
-          label: "Amazonas - 03 Días",
+          label: <Link to="/programas/amazonas">Amazonas - 03 Días</Link>,
         },
       ],
     },
@@ -531,27 +541,41 @@ export default function Navbar() {
               <Link className="navbar-link link">{t("navbar.programas")}</Link>
               <ul className="dropdown-Programas">
                 <li className="dropdown-Programas">
-                  <Link className="dropdown-link link">
+                  <Link
+                    to="/programas/cusco-machupicchu"
+                    className="dropdown-link link"
+                  >
                     Cusco & Machu Picchu - 05 Días
                   </Link>
                 </li>
                 <li className="dropdown-Programas">
-                  <Link className="dropdown-link link">
+                  <Link
+                    to="/programas/peru-clasico"
+                    className="dropdown-link link"
+                  >
                     Perú Clásico - 00 Días{" "}
                   </Link>
                 </li>
                 <li className="dropdown-Programas">
-                  <Link className="dropdown-link link">
+                  <Link
+                    to="/programas/peru-milenario"
+                    className="dropdown-link link"
+                  >
                     Perú Milenario - 00 Días{" "}
                   </Link>
                 </li>
                 <li className="dropdown-Programas">
-                  <Link className="dropdown-link link">
+                  <Link
+                    to="/programas/nazca-paracas"
+                    className="dropdown-link link"
+                  >
                     Nazca & Paracas - 02 Días
                   </Link>
                 </li>
                 <li className="dropdown-Programas">
-                  <Link className="dropdown-link link">Amazonas - 03 Días</Link>
+                  <Link to="/programas/amazonas" className="dropdown-link link">
+                    Amazonas - 03 Días
+                  </Link>
                 </li>
               </ul>
             </li>

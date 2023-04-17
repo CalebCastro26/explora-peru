@@ -1,7 +1,12 @@
 import { Carousel } from "antd";
+import { useEffect } from "react";
 import "./PorquePeru.css";
 
 export default function PorquePeru() {
+  useEffect(() => {
+    window.scroll({ top: 0 });
+  }, []);
+
   const contentStyle = {
     color: "#fff",
     height: 350,

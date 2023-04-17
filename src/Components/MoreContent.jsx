@@ -13,6 +13,8 @@ export default function MoreContent({ DESTINO_GLOBAL, titulo }) {
     </div>
   );
 
+  console.log(DESTINO_GLOBAL);
+
   return (
     <div className="MoreContent">
       <div className="MoreContent__contain">

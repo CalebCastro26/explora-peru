@@ -16,6 +16,10 @@ export default function MejoresDestinos() {
   const appctx = useContext(ApplicationContext);
 
   useEffect(() => {
+    window.scroll({ top: 0 });
+  }, []);
+
+  useEffect(() => {
     appctx.setDataContext({
       ...appctx.data,
       destinoGlobal: findDestino,
