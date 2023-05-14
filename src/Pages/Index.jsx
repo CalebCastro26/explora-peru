@@ -2,6 +2,7 @@ import { Card, Carousel } from "antd";
 import { useTranslation } from "react-i18next";
 import { useEffect } from "react";
 
+import { Link } from "react-router-dom";
 import "./Index.css";
 export default function Index() {
   const { Meta } = Card;
@@ -70,46 +71,68 @@ export default function Index() {
         </div>
         <div className="destinos-card">
           <div className="destinos-one-card noHover">
-            <img src="/destinos/trek-cajamarca-amazonas.jpg" alt="" />
-            <div className="destinos-layer">
-              <h4 className="destinos-layer-titulo">Destino Desierto</h4>
-              <p className="destinos-layer-contenido">Machu Picchu - Cuzco</p>
-            </div>
+            <Link to={"/destinos/mejoresdestinos/Cusco"}>
+              <img src="/destinos/trek-cajamarca-amazonas.jpg" alt="" />
+              <div className="destinos-layer">
+                <h4 className="destinos-layer-titulo">Destino Montañas</h4>
+                <p className="destinos-layer-contenido">
+                  Cusco - Valle Sagrado - Machu Picchu
+                </p>
+              </div>
+            </Link>
           </div>
           <div className="destinos-one-card noHover">
-            <img src="/destinos/trek-cajamarca-lambayeque2.jpg" alt="" />
-            <div className="destinos-layer">
-              <h4 className="destinos-layer-titulo">Destino Andes</h4>
-              <p className="destinos-layer-contenido">Andes - Cuzco</p>
-            </div>
+            <Link to={"/destinos/mejoresdestinos/Puno"}>
+              <img src="/destinos/trek-cajamarca-lambayeque2.jpg" alt="" />
+              <div className="destinos-layer">
+                <h4 className="destinos-layer-titulo">Destino Andes</h4>
+                <p className="destinos-layer-contenido">Puno - Lago TitiCaca</p>
+              </div>
+            </Link>
           </div>
           <div className="destinos-one-card noHover">
-            <img src="/destinos/trek-cajamarca-trujillo.jpg" alt="" />
-            <div className="destinos-layer">
-              <h4 className="destinos-layer-titulo">Destino Amazonia</h4>
-              <p className="destinos-layer-contenido">Amazonas - Selva</p>
-            </div>
+            <Link to={"/destinos/mejoresdestinos/Arequipa"}>
+              <img src="/destinos/trek-cajamarca-trujillo.jpg" alt="" />
+              <div className="destinos-layer">
+                <h4 className="destinos-layer-titulo">Destino Andes</h4>
+                <p className="destinos-layer-contenido">
+                  Arequipa - Cañon del Colca
+                </p>
+              </div>
+            </Link>
           </div>
           <div className="destinos-one-card noHover">
-            <img src="/destinos/trek-cajamarca-trujillo.jpg" alt="" />
-            <div className="destinos-layer">
-              <h4 className="destinos-layer-titulo">Destino Amazonia</h4>
-              <p className="destinos-layer-contenido">Amazonas - Selva</p>
-            </div>
+            <Link to={"/destinos/mejoresdestinos/Ica"}>
+              <img src="/destinos/trek-cajamarca-trujillo.jpg" alt="" />
+              <div className="destinos-layer">
+                <h4 className="destinos-layer-titulo">Destino Desierto</h4>
+                <p className="destinos-layer-contenido">
+                  Paracas - Ica - Líneas de Nazca
+                </p>
+              </div>
+            </Link>
           </div>
           <div className="destinos-one-card noHover">
-            <img src="/destinos/trek-cajamarca-trujillo.jpg" alt="" />
-            <div className="destinos-layer">
-              <h4 className="destinos-layer-titulo">Destino Amazonia</h4>
-              <p className="destinos-layer-contenido">Amazonas - Selva</p>
-            </div>
+            <Link to={"/destinos/mejoresdestinos/Amazonia"}>
+              <img src="/destinos/trek-cajamarca-trujillo.jpg" alt="" />
+              <div className="destinos-layer">
+                <h4 className="destinos-layer-titulo">Destino Amazonia</h4>
+                <p className="destinos-layer-contenido">
+                  Iquitos & Puerto Maldonado
+                </p>
+              </div>
+            </Link>
           </div>
           <div className="destinos-one-card noHover">
-            <img src="/destinos/trek-cajamarca-trujillo.jpg" alt="" />
-            <div className="destinos-layer">
-              <h4 className="destinos-layer-titulo">Destino Amazonia</h4>
-              <p className="destinos-layer-contenido">Amazonas - Selva</p>
-            </div>
+            <Link to={"/destinos/mejoresdestinos/Lima"}>
+              <img src="/destinos/trek-cajamarca-trujillo.jpg" alt="" />
+              <div className="destinos-layer">
+                <h4 className="destinos-layer-titulo">Destino Ciudad</h4>
+                <p className="destinos-layer-contenido">
+                  Lima - Capital Economica
+                </p>
+              </div>
+            </Link>
           </div>
         </div>
       </section>
@@ -122,58 +145,59 @@ export default function Index() {
         {/* Paquetes Cards */}
         <div className="paquetes-list">
           <div className="paquete">
-            <img src="/destinos/trek-cajamarca-amazonas.jpg" alt="" />
-            <div className="layer">
-              <h4>Machu Picchu</h4>
-              <p className="layer-contenido">
-                5 dias / 4 noches y/o descripción
-              </p>
-            </div>
+            <Link to={"/programas/cusco-machupicchu"}>
+              <img src="/destinos/trek-cajamarca-amazonas.jpg" alt="" />
+              <div className="layer">
+                <h4>Machu Picchu</h4>
+                <p className="layer-contenido">
+                  5 dias / 4 noches y/o descripción
+                </p>
+              </div>
+            </Link>
           </div>
           <div className="paquete">
-            <img src="/destinos/trek-cajamarca-lambayeque2.jpg" alt="" />
-            <div className="layer">
-              <h4>Perú Clásico</h4>
-              <p className="layer-contenido">
-                3 dias / 3 noches y/o descripción
-              </p>
-            </div>
+            <Link to={"/programas/peru-clasico"}>
+              <img src="/destinos/trek-cajamarca-lambayeque2.jpg" alt="" />
+              <div className="layer">
+                <h4>Perú Clásico</h4>
+                <p className="layer-contenido">
+                  3 dias / 3 noches y/o descripción
+                </p>
+              </div>
+            </Link>
           </div>
           <div className="paquete">
-            <img src="/destinos/trek-cajamarca-trujillo.jpg" alt="" />
-            <div className="layer">
-              <h4>Perú Milenario</h4>
-              <p className="layer-contenido">
-                3 dias / 3 noches y/o descripción
-              </p>
-            </div>
+            <Link to={"/programas/peru-milenario"}>
+              <img src="/destinos/trek-cajamarca-trujillo.jpg" alt="" />
+              <div className="layer">
+                <h4>Perú Milenario</h4>
+                <p className="layer-contenido">
+                  3 dias / 3 noches y/o descripción
+                </p>
+              </div>
+            </Link>
           </div>
           <div className="paquete">
-            <img src="/destinos/trek-cajamarca-trujillo.jpg" alt="" />
-            <div className="layer">
-              <h4>Nazca & Paracas</h4>
-              <p className="layer-contenido">
-                3 dias / 3 noches y/o descripción
-              </p>
-            </div>
+            <Link to={"/programas/nazca-paracas"}>
+              <img src="/destinos/trek-cajamarca-trujillo.jpg" alt="" />
+              <div className="layer">
+                <h4>Nazca & Paracas</h4>
+                <p className="layer-contenido">
+                  3 dias / 3 noches y/o descripción
+                </p>
+              </div>
+            </Link>
           </div>
           <div className="paquete">
-            <img src="/destinos/trek-cajamarca-trujillo.jpg" alt="" />
-            <div className="layer">
-              <h4>Amazonas</h4>
-              <p className="layer-contenido">
-                3 dias / 3 noches y/o descripción
-              </p>
-            </div>
-          </div>
-          <div className="paquete">
-            <img src="/destinos/trek-cajamarca-trujillo.jpg" alt="" />
-            <div className="layer">
-              <h4>Amazonas</h4>
-              <p className="layer-contenido">
-                3 dias / 3 noches y/o descripción
-              </p>
-            </div>
+            <Link to={"/programas/amazonas"}>
+              <img src="/destinos/trek-cajamarca-trujillo.jpg" alt="" />
+              <div className="layer">
+                <h4>Amazonas</h4>
+                <p className="layer-contenido">
+                  3 dias / 3 noches y/o descripción
+                </p>
+              </div>
+            </Link>
           </div>
         </div>
       </section>
@@ -184,96 +208,126 @@ export default function Index() {
           cambiarse y modificarse de acuerdo a sus necesidades y preferencias.
         </p>
         <div className="card-highlights">
-          <Card
-            className="oneCard"
-            hoverable
-            style={{ width: 400 }}
-            cover={<img alt="H1" src="/destinos/trek-cajamarca-amazonas.jpg" />}
-          >
-            <Meta
-              title="FD Machu Picchu - Cuzco"
-              description="Descripción primer highlight"
-            />
-          </Card>
-          <Card
-            className="oneCard"
-            hoverable
-            style={{ width: 400 }}
-            cover={
-              <img alt="H2" src="/destinos/trek-cajamarca-lambayeque2.jpg" />
-            }
-          >
-            <Meta
-              title="FD Montaña 7 colores - Cuzco"
-              description="Descripción segundo highlight"
-            />
-          </Card>
-          <Card
-            className="oneCard"
-            hoverable
-            style={{ width: 400 }}
-            cover={<img alt="H3" src="/destinos/trek-cajamarca-trujillo.jpg" />}
-          >
-            <Meta
-              title="Camino Inca - Cuzco"
-              description="Descripción tercer highlight"
-            />
-          </Card>
-          <Card
-            className="oneCard"
-            hoverable
-            style={{ width: 400 }}
-            cover={<img alt="H3" src="/destinos/trek-cajamarca-trujillo.jpg" />}
-          >
-            <Meta
-              title="Tour Gastronomico - Lima"
-              description="Descripción tercer highlight"
-            />
-          </Card>
-          <Card
-            className="oneCard"
-            hoverable
-            style={{ width: 400 }}
-            cover={<img alt="H3" src="/destinos/trek-cajamarca-trujillo.jpg" />}
-          >
-            <Meta
-              title="FD Uros y Taquile - Puno"
-              description="Descripción tercer highlight"
-            />
-          </Card>
-          <Card
-            className="oneCard"
-            hoverable
-            style={{ width: 400 }}
-            cover={<img alt="H3" src="/destinos/trek-cajamarca-trujillo.jpg" />}
-          >
-            <Meta
-              title="Cañon del Colca - Arequipa"
-              description="Descripción tercer highlight"
-            />
-          </Card>
-          <Card
-            className="oneCard"
-            hoverable
-            style={{ width: 400 }}
-            cover={<img alt="H3" src="/destinos/trek-cajamarca-trujillo.jpg" />}
-          >
-            <Meta
-              title="FD Uros y Taquile - Puno"
-              description="Descripción tercer highlight"
-            />
-          </Card>
-          <Card
-            className="oneCard"
-            hoverable
-            style={{ width: 400 }}
-            cover={<img alt="H3" src="/destinos/trek-cajamarca-trujillo.jpg" />}
-          >
-            <Meta
-              title="Cañon del Colca - Arequipa"
-              description="Descripción tercer highlight"
-            />
-          </Card>
+          <Link to={"/highlights/fdmachu-picchu"}>
+            <Card
+              className="oneCard"
+              hoverable
+              style={{ width: 400 }}
+              cover={
+                <img alt="H1" src="/destinos/trek-cajamarca-amazonas.jpg" />
+              }
+            >
+              <Meta
+                title="FD Machu Picchu - Cuzco"
+                description="Descripción primer highlight"
+              />
+            </Card>
+          </Link>
+          <Link to={"/highlights/fdmontana-colores"}>
+            <Card
+              className="oneCard"
+              hoverable
+              style={{ width: 400 }}
+              cover={
+                <img alt="H2" src="/destinos/trek-cajamarca-lambayeque2.jpg" />
+              }
+            >
+              <Meta
+                title="FD Montaña 7 colores - Cuzco"
+                description="Descripción segundo highlight"
+              />
+            </Card>
+          </Link>
+          <Link to={"/highlights/fdcamino-inca"}>
+            <Card
+              className="oneCard"
+              hoverable
+              style={{ width: 400 }}
+              cover={
+                <img alt="H3" src="/destinos/trek-cajamarca-trujillo.jpg" />
+              }
+            >
+              <Meta
+                title="Camino Inca - Cuzco"
+                description="Descripción tercer highlight"
+              />
+            </Card>
+          </Link>
+          <Link to={"/highlights/fdlineas-nazca"}>
+            <Card
+              className="oneCard"
+              hoverable
+              style={{ width: 400 }}
+              cover={
+                <img alt="H3" src="/destinos/trek-cajamarca-trujillo.jpg" />
+              }
+            >
+              <Meta
+                title="FD Sobrevuelo Lineas de Nazca"
+                description="Descripción tercer highlight"
+              />
+            </Card>
+          </Link>
+          <Link to={"/highlights/fdtour-lima"}>
+            <Card
+              className="oneCard"
+              hoverable
+              style={{ width: 400 }}
+              cover={
+                <img alt="H3" src="/destinos/trek-cajamarca-trujillo.jpg" />
+              }
+            >
+              <Meta
+                title="Tour Gastronomico - Lima"
+                description="Descripción tercer highlight"
+              />
+            </Card>
+          </Link>
+          <Link to={"/highlights/fduros-taquile"}>
+            <Card
+              className="oneCard"
+              hoverable
+              style={{ width: 400 }}
+              cover={
+                <img alt="H3" src="/destinos/trek-cajamarca-trujillo.jpg" />
+              }
+            >
+              <Meta
+                title="FD Uros y Taquile - Puno"
+                description="Descripción tercer highlight"
+              />
+            </Card>
+          </Link>
+          <Link to={"/highlights/fdcanon-colca"}>
+            <Card
+              className="oneCard"
+              hoverable
+              style={{ width: 400 }}
+              cover={
+                <img alt="H3" src="/destinos/trek-cajamarca-trujillo.jpg" />
+              }
+            >
+              <Meta
+                title="Cañon del Colca - Arequipa"
+                description="Descripción tercer highlight"
+              />
+            </Card>
+          </Link>
+          <Link to={"/highlights/fdchoquequirao"}>
+            <Card
+              className="oneCard"
+              hoverable
+              style={{ width: 400 }}
+              cover={
+                <img alt="H3" src="/destinos/trek-cajamarca-trujillo.jpg" />
+              }
+            >
+              <Meta
+                title="Choquequirao"
+                description="Descripción tercer highlight"
+              />
+            </Card>
+          </Link>
         </div>
       </section>
     </div>

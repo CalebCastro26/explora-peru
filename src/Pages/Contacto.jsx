@@ -8,19 +8,29 @@ export default function Contacto() {
   const [options, setOptions] = useState([]);
 
   useEffect(() => {
+    const controller = new AbortController();
+    const signal = controller.signal;
+
     window.scroll({ top: 0 });
-    fetch("https://restcountries.com/v3.1/all")
-      .then((data) => data.json())
-      .then((response) => {
+    fetch("https://restcountries.com/v3.1/all", {
+      signal,
+    })
+      .then((res) => res.json())
+      .then((data) => {
         let countries = [];
-        response.map((respuesta) => {
-          console.log(respuesta);
+        data.map((respuesta) => {
           countries.push({
             label: respuesta.name.common,
             value: respuesta.name.common,
           });
         });
         setOptions(countries);
+      })
+      .catch((error) => {
+        if (error.name === "AbortError") {
+          console.log("Canceled");
+        } else {
+        }
       });
   }, []);
 

@@ -190,6 +190,7 @@ p {
   height: 600px;
   object-fit: cover;
   transition: 0.5s ease;
+  cursor: pointer;
 }
 
 .destinos-one-card:hover {
